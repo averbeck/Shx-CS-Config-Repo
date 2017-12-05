@@ -4,10 +4,10 @@ echo    " "
 echo    " "
 echo    "    If everything seems under control, you're just not going fast enough."
 echo    " "
-echo    "                           + initializing ... +
+echo    "                           + initializing ... +"
 echo    "                         ++++++++++++++++++++++++"
 echo    "                       +                          +" 
-echo    "                      +  ~~  Shx Config v2.30  ~~  +"
+echo    "                      +  ~~  Shx Config v2.32  ~~  +"
 echo    "                       +                          +"
 echo    "                         ++++++++++++++++++++++++" 
 //echo  "                           +     loaded ...   +"
@@ -47,16 +47,17 @@ exec "shx/settings_net.cfg"
 // °°°°°°°°°°°°°°°°°°°°°°
 exec "shx/settings_custom.cfg"
 // °°°°°°°°°°°°°°°°°°°°°°
+//
 echo "                           +     loaded ...   +"
 echo " "
 echo " "
 echo " "
 echo " "
 echo " "
+//
 // °°°°°°°°°°°°°°°°°°°°°°°°°°°°
 // ° save changes to registry °
 // °°°°°°°°°°°°°°°°°°°°°°°°°°°°
 mat_savechanges
 host_writeconfig
 // °°°°°°°°°°°°°°°°°°°°°°°°°°°°
-
