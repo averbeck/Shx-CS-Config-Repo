@@ -1,2 +1,2 @@
-# shx_config
+# Shx Counter-Strike Config
 Shx Counter-Strike Config
