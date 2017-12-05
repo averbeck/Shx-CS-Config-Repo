@@ -7,12 +7,12 @@ echo    " "
 echo    "                           + initializing ... +
 echo    "                         ++++++++++++++++++++++++"
 echo    "                       +                          +" 
-echo    "                      +  ~~  Shx Config v2.22  ~~  +"
+echo    "                      +  ~~  Shx Config v2.23  ~~  +"
 echo    "                       +                          +"
 echo    "                         ++++++++++++++++++++++++" 
 //echo  "                           +     loaded ...   +"
 
-alias    "shx_version"    "echo ] Shx CS:GO GUI - Build 2.22"
+alias    "shx_version"    "echo ] Shx CS:GO GUI - Build 2.23"
 alias    "shx_reload"     "exec shx/loader.cfg"
 
 // DEMO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -29,13 +29,9 @@ alias    "demo_stop"    "stop; say_team [ Recording stopped! ]"
 alias    "+net-scores"    "net_graph 1; +showscores"
 alias    "-net-scores"    "-showscores; net_graph 0"
 
-alias    "+next-scores"    "+showscores; timeleft; room_type 0"
-alias    "-next-scores"    "-showscores"
-
 // LANSERVER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 alias    "lan_settings"    "exec shx/settings_lan.cfg"
-
 alias    "start_server"    "lan_settings; map de_dust2"
 
 // BUY +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -126,14 +122,33 @@ alias    "on_togglecrdynamic"     "cl_crosshairstyle 3; echo Dam~~~Crosshair~<dy
 alias    "off_togglecrdynamic"    "cl_crosshairstyle 4; echo Dam~~~Crosshair~<static>; alias shx_togglecrdynamic on_togglecrdynamic; ackn"
 
 //Toggle: Ingame Voice
-alias    "shx_cyclevoice"     "off_cyclevoice;"
-alias    "low_cyclevoice"     "voice_system_enable 1; voice_enable 1; voice_scale 0.5; echo Dam~~~Voice~<50%>; alias shx_cyclevoice mid_cyclevoice; ackn"
-alias    "mid_cyclevoice"     "voice_scale 0.75; echo Dam~~~Voice~<75%>; alias shx_cyclevoice full_cyclevoice; ackn"
-alias    "full_cyclevoice"    "voice_scale 1; echo Dam~~~Voice~<100%>; alias shx_cyclevoice off_cyclevoice; ackn"
-alias    "off_cyclevoice"     "voice_system_enable 0; voice_enable 0; voice_scale 0; echo Dam~~~Voice~<off>; alias shx_cyclevoice low_cyclevoice; ackn"
+alias    "shx_cyclevoice"    "0_cyclevoice;"
+alias    "25_cyclevoice"     "voice_system_enable 1; voice_enable 1; voice_scale 0.25; echo Dam~~~Voice~<25%>; alias shx_cyclevoice 50_cyclevoice; ackn"
+alias    "50_cyclevoice"     "voice_scale 0.5; echo Dam~~~Voice~<50%>; alias shx_cyclevoice 75_cyclevoice; ackn"
+alias    "75_cyclevoice"     "voice_scale 0.75; echo Dam~~~Voice~<75%>; alias shx_cyclevoice 100_cyclevoice; ackn"
+alias    "100_cyclevoice"    "voice_scale 1; echo Dam~~~Voice~<100%>; alias shx_cyclevoice off_cyclevoice; ackn"
+alias    "0_cyclevoice"      "voice_system_enable 0; voice_enable 0; voice_scale 0; echo Dam~~~Voice~<off>; alias shx_cyclevoice 25_cyclevoice; ackn"
 
 alias    "+voicerecord_sec"    "+voicerecord"
 alias    "-voicerecord_sec"    "-voicerecord"
+
+alias    "shx_radardefault"    "cl_radar_always_centered 1; cl_radar_scale 0.7; cl_hud_radar_scale 1; cl_radar_icon_scale_min 0.6; cl_radar_rotate 1; cl_radar_square_with_scoreboard 1"
+alias    "shx_radarstatic"     "cl_radar_always_centered 0; cl_radar_scale 0.3; cl_hud_radar_scale 1.15; cl_radar_icon_scale_min 0.8; cl_radar_rotate 0; cl_radar_square_with_scoreboard 1"
+
+alias    "shx_toggleradarrot"     "incrementvar cl_radar_rotate 0 1 1"
+alias    "shx_cycleradarscale"    "incrementvar cl_radar_scale 0.2 0.9 0.1"
+
+
+// RADIO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+alias    "shx_radio_BombA"    "say_team ->[A]<- Bomb on A; needbackup"
+alias    "shx_radio_BombB"    "say_team ->[B]<- Bomb on B; needbackup"
+alias    "shx_radio_Down"     "say_team -> Bomb down <-; needbackup"
+
+//Alias: Radio-Toggle
+alias    "+shx_radio"    "bind w enemyspot; bind a shx_radio_BombA; bind s shx_radio_BombB; bind SPACE shx_radio_Down"
+alias    "-shx_radio"    "bind w +move_f; bind a +move_l; bind s +move_b; bind SPACE +al_jump"
 
 // MOVEMENT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
