@@ -1,5 +1,5 @@
 
-alias    "shx_version"    "echo ] Shx CS:GO GUI - Build 2.33"
+alias    "shx_version"    "echo ] Shx CS:GO Config - Build 2.34"
 alias    "shx_reload"     "exec shx/loader.scr"
 
 // DEMO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -21,9 +21,7 @@ alias    "-shx_scores"    "-showscores; net_graph 0"
 alias    "shx_lan"          "exec shx/settings_lan.cfg"
 alias    "shx_lan_start"    "shx_lan; map de_dust2"
 
-// LAN SERVER ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-alias    "shx_train"        "exec shx/settings_train.cfg"
+alias    "shx_train"        "exec train/menu_open.cfg"
 
 // BUY +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -87,12 +85,12 @@ alias    "-alt_voicerecord"    "-voicerecord"
 
 // Toggle: Sprachlautstaerke
 alias    "shx_cycle_voice"    "0_cycle_voice;"
-alias    "5_cycle_voice"      "voice_enable 1; voice_scale 0.25; echo Dam~~~~Voice~<5%>; alias shx_cycle_voice 25_cycle_voice; ackn"
-alias    "25_cycle_voice"     "voice_scale 0.25; echo Dam~~~~Voice~<25%>; alias shx_cycle_voice 50_cycle_voice; ackn"
-alias    "50_cycle_voice"     "voice_scale 0.5; echo Dam~~~~Voice~<50%>; alias shx_cycle_voice 75_cycle_voice; ackn"
-alias    "75_cycle_voice"     "voice_scale 0.75; echo Dam~~~~Voice~<75%>; alias shx_cycle_voice 100_cycle_voice; ackn"
-alias    "100_cycle_voice"    "voice_scale 1; echo Dam~~~~Voice~<100%>; alias shx_cycle_voice 0_cycle_voice; ackn"
-alias    "0_cycle_voice"      "voice_enable 0; voice_scale 0; echo Dam~~~~Voice~<off>; alias shx_cycle_voice 5_cycle_voice; ackn"
+alias    "5_cycle_voice"      "voice_enable 1; voice_scale 0.25; echo Dam____Voice_=_5%; alias shx_cycle_voice 25_cycle_voice; ackn"
+alias    "25_cycle_voice"     "voice_scale 0.25; echo Dam____Voice_=_25%; alias shx_cycle_voice 50_cycle_voice; ackn"
+alias    "50_cycle_voice"     "voice_scale 0.5; echo Dam____Voice_=_50%; alias shx_cycle_voice 75_cycle_voice; ackn"
+alias    "75_cycle_voice"     "voice_scale 0.75; echo Dam____Voice_=_75%; alias shx_cycle_voice 100_cycle_voice; ackn"
+alias    "100_cycle_voice"    "voice_scale 1; echo Dam____Voice_=_100%; alias shx_cycle_voice 0_cycle_voice; ackn"
+alias    "0_cycle_voice"      "voice_enable 0; voice_scale 0; echo Dam____Voice_=_off; alias shx_cycle_voice 5_cycle_voice; ackn"
 
 // Alias: Bombfinder
 alias    "shx_enable_bombfinder"      "gameinstructor_enable 1; cl_radar_icon_scale_min 1.0; cl_radar_always_centered 1; cl_radar_rotate 1; cl_radar_scale 1"
@@ -111,9 +109,9 @@ alias    "shx_clanid"    "null"
 alias    "no_clanid"     "cl_clanid 0"
 
 // Toggle: Clan ID
-alias    "shx_toggle_clanid"        "custom_toggle_clanid"
-alias    "default_toggle_clanid"    "no_clanid; echo Dam~~~~Clan~ID~<off>; alias shx_toggle_clanid custom_toggle_clanid; ackn"
-alias    "custom_toggle_clanid"     "shx_clanid; echo Dam~~~~Clan~ID~<on>; alias shx_toggle_clanid default_toggle_clanid; ackn"
+alias    "shx_toggle_clanid"        "default_toggle_clanid"
+alias    "default_toggle_clanid"    "no_clanid; echo Dam____Clan-ID_=_off; alias shx_toggle_clanid custom_toggle_clanid; ackn"
+alias    "custom_toggle_clanid"     "shx_clanid; echo Dam____Clan-ID_=_on; alias shx_toggle_clanid default_toggle_clanid; ackn"
 
 // FADENKREUZ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -130,21 +128,22 @@ alias    "black_cycle_chc"               "shx_black_crosshair; alias shx_cycle_c
 
 // Toggle: Dynamisches Fadenkreuz
 alias    "shx_toggle_crosshair_dynamic"    "on_toggle_chd"
-alias    "on_toggle_chd"                   "cl_crosshairstyle 3; cl_crosshairdot 1; echo Dam~~~~Crosshair~<dynamic>; alias shx_toggle_crosshair_dynamic off_toggle_chd; ackn"
-alias    "off_toggle_chd"                  "cl_crosshairstyle 4; cl_crosshairdot 0; echo Dam~~~~Crosshair~<static>; alias shx_toggle_crosshair_dynamic on_toggle_chd; ackn"
+alias    "on_toggle_chd"                   "cl_crosshairstyle 3; cl_crosshairdot 1; echo Dam____Crosshair_=_dynamic; alias shx_toggle_crosshair_dynamic off_toggle_chd; ackn"
+alias    "off_toggle_chd"                  "cl_crosshairstyle 4; cl_crosshairdot 0; echo Dam____Crosshair_=_static; alias shx_toggle_crosshair_dynamic on_toggle_chd; ackn"
 
 // RADAR +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Radar-Einstellungen
-alias    "shx_radar_default"    "cl_radar_always_centered 1; cl_radar_scale 0.7; shx_radar_zoom_last 70_radar_zoom; cl_hud_radar_scale 1; cl_radar_icon_scale_min 0.6; cl_radar_rotate 1; alias shx_radar_type_last shx_radar_default"
-alias    "shx_radar_static"     "cl_radar_always_centered 0; cl_radar_scale 0.35; shx_radar_zoom_last 35_radar_zoom; cl_hud_radar_scale 1.2; cl_radar_icon_scale_min 0.8; cl_radar_rotate 0; alias shx_radar_type_last shx_radar_static"
+alias    "shx_radar_original"    "cl_radar_always_centered 1; cl_radar_scale 0.7; shx_radar_zoom_last 70_radar_zoom; cl_hud_radar_scale 1; cl_radar_icon_scale_min 0.6; cl_radar_rotate 1; alias shx_radar_type_last shx_radar_dynamic"
+alias    "shx_radar_dynamic"     "cl_radar_always_centered 0; cl_radar_scale 0.7; shx_radar_zoom_last 70_radar_zoom; cl_hud_radar_scale 1.2; cl_radar_icon_scale_min 0.8; cl_radar_rotate 1; alias shx_radar_type_last shx_radar_dynamic"
+alias    "shx_radar_static"      "cl_radar_always_centered 0; cl_radar_scale 0.35; shx_radar_zoom_last 35_radar_zoom; cl_hud_radar_scale 1.2; cl_radar_icon_scale_min 0.8; cl_radar_rotate 0; alias shx_radar_type_last shx_radar_static"
 
 // Toggle: Radarrotation
 alias    "shx_radar_type_last"    "shx_radar_static"
 
 alias    "shx_toggle_radar_dynamic"    "dynamic_toggle_radar"
-alias    "static_toggle_radar"         "shx_radar_static; echo Dam~~~~Radar~<static>; alias shx_toggle_radar_dynamic dynamic_toggle_radar; ackn"
-alias    "dynamic_toggle_radar"        "shx_radar_default; echo Dam~~~~Radar~<dynamic>; alias shx_toggle_radar_dynamic static_toggle_radar; ackn"
+alias    "static_toggle_radar"         "shx_radar_static; echo Dam____Radar_=_static; alias shx_toggle_radar_dynamic dynamic_toggle_radar; ackn"
+alias    "dynamic_toggle_radar"        "shx_radar_dynamic; echo Dam____Radar_=_dynamic; alias shx_toggle_radar_dynamic static_toggle_radar; ackn"
 
 // Toggle: Radarzoom
 
@@ -181,8 +180,8 @@ alias    "shx_default_viewmodel"    "cl_viewmodel_shift_left_amt 1.5; cl_viewmod
 
 // Toggle: Viewmodel
 alias    "shx_toggle_viewmodel"        "default_toggle_viewmodel"
-alias    "default_toggle_viewmodel"    "shx_default_viewmodel; echo Dam~~~~Viewmodel~<default>; alias shx_toggle_viewmodel custom_toggle_viewmodel; ackn"
-alias    "custom_toggle_viewmodel"     "shx_custom_viewmodel; echo Dam~~~~Viewmodel~<small>; alias shx_toggle_viewmodel default_toggle_viewmodel; ackn"
+alias    "default_toggle_viewmodel"    "shx_default_viewmodel; echo Dam____Viewmodel_=_default; alias shx_toggle_viewmodel custom_toggle_viewmodel; ackn"
+alias    "custom_toggle_viewmodel"     "shx_custom_viewmodel; echo Dam____Viewmodel_=_small; alias shx_toggle_viewmodel default_toggle_viewmodel; ackn"
 
 // RADIO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -192,8 +191,13 @@ alias    "shx_radio_bomb_b"       "say_team ->[B]<- Bomb on B; needbackup"
 alias    "shx_radio_bomb_down"    "say_team -> Bomb down <-; needbackup"
 
 // Alias: Radio-Toggle
-alias    "+shx_alt_layout"    "bind w enemyspot; bind a shx_radio_bomb_a; bind s shx_radio_bomb_b; bind SPACE shx_radio_bomb_down; gameinstructor_enable 0"
-alias    "-shx_alt_layout"    "bind w +move_f; bind a +move_l; bind s +move_b; bind SPACE +move_jump; shx_disable_bombfinder"
+alias    "default_w"          "bind w +move_f"
+alias    "default_a"          "bind a +move_l"
+alias    "default_s"          "bind s +move_b"
+alias    "default_d"          "bind d +move_r"
+alias    "default_space"      "bind SPACE +move_jump"
+alias    "+shx_alt_layout"    "bind w enemyspot; bind a shx_radio_bomb_a; bind s shx_radio_bomb_b; bind SPACE shx_radio_bomb_down; gameinstructor_enable 0; shx_clear_vision"
+alias    "-shx_alt_layout"    "default_w; default_a; default_s; default_d; default_space; shx_disable_bombfinder"
 
 // ANGRIFF ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -205,6 +209,9 @@ alias    "-alt_attack"    "-attack"
 alias    "+alt_attack2"    "+attack2; spec_next"
 alias    "-alt_attack2"    "-attack2"
 
+// Alias: Nachladen
+alias    "+alt_reload"    "+reload; shx_clear_vision"
+alias    "-alt_reload"    "-reload"
 // BEWEGUNG ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Vorwaerts
@@ -224,24 +231,21 @@ alias    "+move_r"    "+moveright"
 alias    "-move_r"    "-moveright"
 
 // Alias: Ducken
-alias    "+move_duck"    "+duck; move_dis; shx_clear_vision"
-alias    "-move_duck"    "-duck; move_dis"
+alias    "+move_crouch"    "+duck; move_dis; shx_clear_vision"
+alias    "-move_crouch"    "-duck; move_dis"
 
-// Alias: Sprung
-alias    "+move_jump"    "+jump; spec_mode" 
+// Alias: Springen
+alias    "+move_jump"    "+jump; shx_clear_vision; spec_mode" 
 alias    "-move_jump"    "-jump"
 
-// Alias: Setzt alle Bewegungs-Cycle an den Anfangspunkt
-alias    "reset_cycle_mov"    "alias shx_toggle_sneak on_toggle_sneak; alias shx_toggle_duck on_toggle_duck; -speed; -movedown; -duck"
-
 // Alias: Schleichen
-alias    "+alt_sneak"    "+speed; move_sid"
-alias    "-alt_sneak"    "-speed; move_sid"
+alias    "+move_sneak"    "+speed; move_sid"
+alias    "-move_sneak"    "-speed; move_sid"
 
 // Toggle: Ducken bis zum naechsten Tastendruck
-alias    "shx_toggle_duck"    "on_toggle_duck"
-alias    "on_toggle_duck"     "alias shx_toggle_duck off_toggle_duck; +duck; move_dis; spec_menu"
-alias    "off_toggle_duck"    "alias shx_toggle_duck on_toggle_duck; -duck"
+alias    "shx_toggle_crouch"    "on_toggle_crouch"
+alias    "on_toggle_crouch"     "alias shx_toggle_crouch off_toggle_crouch; +duck; move_dis; spec_menu"
+alias    "off_toggle_crouch"    "alias shx_toggle_crouch on_toggle_crouch; -duck"
 
 // Toggle: Schleichen bis zum naechsten Tastendruck
 alias    "shx_toggle_sneak"    "on_toggle_sneak"
@@ -259,25 +263,35 @@ alias    "on_toggle_dis"         "alias shx_toggle_dis off_toggle_dis; alias mov
 alias    "off_toggle_dis"        "alias shx_toggle_dis on_toggle_dis; alias move_dis null"
 
 // Toggle: Schleichen unterbricht Ducken
-alias    "shx_toggle_act_sid"    "-duck; alias shx_toggle_duck on_toggle_duck"
+alias    "shx_toggle_act_sid"    "-duck; alias shx_toggle_crouch on_toggle_crouch"
 alias    "on_toggle_sid"         "alias shx_toggle_sid off_toggle_sid; alias move_sid shx_toggle_act_sid"
 alias    "off_toggle_sid"        "alias shx_toggle_sid on_toggle_sid; alias move_sid null"
+
+// Alias: Setzt alle Bewegungs-Cycle an den Anfangspunkt
+alias    "reset_cycle_mov"    "alias shx_toggle_sneak on_toggle_sneak; alias shx_toggle_crouch on_toggle_crouch; -speed; -movedown; -duck"
 
 // DISPLAY +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Text Filter
-alias    "default_filter"    "con_filter_enable 2; con_filter_text Dam; con_filter_text_out Player:"
-default_filter
+alias    "shx_damage_filter"    "con_filter_enable 2; con_filter_text Dam; con_filter_text_out Player:"
+alias    "shx_menu_filter"      "con_filter_enable 2; con_filter_text |"
+alias    "shx_no_filter"        "con_filter_enable 0"
+alias    "shx_reset_filter"     "shx_damage_filter"
+shx_damage_filter
 
 // Toggle: Text on Screen
+alias    "shx_enable_developer"     "developer 1"
+alias    "shx_disable_developer"    "developer 0"
+alias    "shx_reset_developer"      "shx_enable_developer"
+
 alias    "shx_toggle_osd"    "on_toggle_osd"
-alias    "on_toggle_osd"     "developer 1; echo Dam~~~~TextOnScreen~<on>; alias shx_toggle_osd off_toggle_osd; ackn"
-alias    "off_toggle_osd"    "echo Dam~~~~TextOnScreen~<off>; developer 0; alias shx_toggle_osd on_toggle_osd; ackn"
+alias    "on_toggle_osd"     "shx_enable_developer; echo Dam____TextOnScreen_=_on; alias shx_reset_developer shx_enable_developer; alias shx_toggle_osd off_toggle_osd; ackn"
+alias    "off_toggle_osd"    "echo Dam____TextOnScreen_=_off; shx_disable_developer; alias shx_reset_developer shx_disable_developer; alias shx_toggle_osd on_toggle_osd; ackn"
 
 // Toggle: Display Damage
 alias    "shx_toggle_display_damage"    "off_display_damage"
-alias    "on_display_damage"            "con_filter_enable 2; con_filter_text Dam; con_filter_text_out Player:; echo Dam~~~~DisplayDamage~<on>; alias reset_filter on_display_damage; alias shx_toggle_display_damage off_display_damage; ackn"
-alias    "off_display_damage"           "con_filter_enable 0; alias reset_filter null; echo Dam~~~~DisplayDamage~<off>; alias shx_toggle_display_damage on_display_damage; ackn"
+alias    "on_display_damage"            "shx_damage_filter; echo Dam____DisplayDamage_=_on; alias shx_reset_filter shx_damage_filter; alias shx_toggle_display_damage off_display_damage; ackn"
+alias    "off_display_damage"           "shx_no_filter; echo Dam____DisplayDamage_=_off; alias shx_reset_filter null; alias shx_toggle_display_damage on_display_damage; ackn"
 
 // WAFFEN ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -298,7 +312,7 @@ alias    "wp_next"    "reset_cycle_wp; invnext"
 alias    "wp_last"    "reset_cycle_wp; lastinv"
 
 // Alias: Waffenwechsel zur besten verfuegbaren Waffe
-alias    "wp_bst"    "reset_cycle_wp; bstgun"
+alias    "wp_bst"    "reset_cycle_wp; bstgun; shx_clear_vision"
 alias    "bstgun"    "wp_knife; wp_secgun; wp_prigun"
 
 // Alias: Waffenwechsel zur Primaerwaffe
@@ -310,7 +324,7 @@ alias    "wp_sec"       "reset_cycle_wp; wp_secgun"
 alias    "wp_secgun"    "slot2"
 
 // Alias: Waffenwechsel zum Messer
-alias    "wp_knife"    "reset_cycle_wp; use weapon_knife"
+alias    "wp_knife"    "reset_cycle_wp; use weapon_knife; shx_clear_vision"
 
 // Alias: Waffenwechsel zur HE-Granate
 alias    "wp_hegren"    "reset_cycle_wp; use weapon_hegrenade"
@@ -329,9 +343,6 @@ alias    "wp_ingren"    "reset_cycle_wp; use weapon_incgrenade"
 
 // Alias: Waffenwechsel zum C4-Sprengstoff
 alias    "wp_c4"    "reset_cycle_wp; use weapon_c4"
-
-// Alias: Setzt alle Waffenwechsel- und Bewegungs-Cycle an den Anfangspunkt
-alias    "reset_cycle_all"    "reset_cycle_wp; reset_cycle_mov"
 
 // Cycle: Waffenwechsel zwischen bester Waffe und Sekundaerwaffe
 alias    "wp_cycle_bp"      "wp_cycle_bp_1"
@@ -377,6 +388,9 @@ alias    "reset_cycle_dms"    "alias wp_cycle_bp wp_cycle_bp_1; alias wp_cycle_b
 // Alias: Setzt alle Waffenwechsel-Cycle an den Anfangspunkt
 alias    "reset_cycle_wp"    "alias wp_cycle_bp wp_cycle_bp_1; alias wp_cycle_bk wp_cycle_bk_1; alias wp_cycle_pk wp_cycle_pk_1; alias wp_cycle_bpk wp_cycle_bpk_1; alias wp_cycle_hfs wp_cycle_hfs_1; alias wp_cycle_dms wp_cycle_dms_1"
 
+// Alias: Setzt alle Waffenwechsel- und Bewegungs-Cycle an den Anfangspunkt
+alias    "reset_cycle_all"    "reset_cycle_wp; reset_cycle_mov"
+
 // FUN +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Glock Spam
@@ -387,3 +401,6 @@ alias    "shx_glock_spam"   "bd_glock; bd_glock; bd_glock; bd_glock; bd_glock; b
 alias    "shx_bunny_jump"    "on_bunny_jump"
 alias    "on_bunny_jump"     "bind MWHEELDOWN +jump; bind MWHEELUP +jump; alias shx_bunny_jump off_bunny_jump"
 alias    "off_bunny_jump"    "bind MWHEELDOWN wp_hegren; bind MWHEELUP wp_flgren; alias shx_bunny_jump on_bunny_jump"
+
+// invisible char
+// [　]
