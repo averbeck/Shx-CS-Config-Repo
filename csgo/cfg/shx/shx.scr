@@ -1,19 +1,6 @@
-clear
-// LOGO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-echo    " "
-echo    " "
-echo    "    If everything seems under control, you're just not going fast enough."
-echo    " "
-echo    "                           + initializing ... +
-echo    "                         ++++++++++++++++++++++++"
-echo    "                       +                          +" 
-echo    "                      +  ~~  Shx Config v2.23  ~~  +"
-echo    "                       +                          +"
-echo    "                         ++++++++++++++++++++++++" 
-//echo  "                           +     loaded ...   +"
 
-alias    "shx_version"    "echo ] Shx CS:GO GUI - Build 2.23"
-alias    "shx_reload"     "exec shx/loader.cfg"
+alias    "shx_version"    "echo ] Shx CS:GO GUI - Build 2.30"
+alias    "shx_reload"     "exec shx/loader.scr"
 
 // DEMO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -126,7 +113,7 @@ alias    "shx_cyclevoice"    "0_cyclevoice;"
 alias    "25_cyclevoice"     "voice_system_enable 1; voice_enable 1; voice_scale 0.25; echo Dam~~~Voice~<25%>; alias shx_cyclevoice 50_cyclevoice; ackn"
 alias    "50_cyclevoice"     "voice_scale 0.5; echo Dam~~~Voice~<50%>; alias shx_cyclevoice 75_cyclevoice; ackn"
 alias    "75_cyclevoice"     "voice_scale 0.75; echo Dam~~~Voice~<75%>; alias shx_cyclevoice 100_cyclevoice; ackn"
-alias    "100_cyclevoice"    "voice_scale 1; echo Dam~~~Voice~<100%>; alias shx_cyclevoice off_cyclevoice; ackn"
+alias    "100_cyclevoice"    "voice_scale 1; echo Dam~~~Voice~<100%>; alias shx_cyclevoice 0_cyclevoice; ackn"
 alias    "0_cyclevoice"      "voice_system_enable 0; voice_enable 0; voice_scale 0; echo Dam~~~Voice~<off>; alias shx_cyclevoice 25_cyclevoice; ackn"
 
 alias    "+voicerecord_sec"    "+voicerecord"
@@ -135,19 +122,18 @@ alias    "-voicerecord_sec"    "-voicerecord"
 alias    "shx_radardefault"    "cl_radar_always_centered 1; cl_radar_scale 0.7; cl_hud_radar_scale 1; cl_radar_icon_scale_min 0.6; cl_radar_rotate 1; cl_radar_square_with_scoreboard 1"
 alias    "shx_radarstatic"     "cl_radar_always_centered 0; cl_radar_scale 0.3; cl_hud_radar_scale 1.15; cl_radar_icon_scale_min 0.8; cl_radar_rotate 0; cl_radar_square_with_scoreboard 1"
 
-alias    "shx_toggleradarrot"     "incrementvar cl_radar_rotate 0 1 1"
-alias    "shx_cycleradarscale"    "incrementvar cl_radar_scale 0.2 0.9 0.1"
+alias    "shx_toggleradarrot"     "incrementvar cl_radar_rotate 0 1 1; ackn"
+alias    "shx_cycleradarscale"    "incrementvar cl_radar_scale 0.2 0.9 0.1; ackn"
 
 
 // RADIO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
-alias    "shx_radio_BombA"    "say_team ->[A]<- Bomb on A; needbackup"
-alias    "shx_radio_BombB"    "say_team ->[B]<- Bomb on B; needbackup"
-alias    "shx_radio_Down"     "say_team -> Bomb down <-; needbackup"
+alias    "shx_radio_bombA"       "say_team ->[A]<- Bomb on A; needbackup"
+alias    "shx_radio_bombB"       "say_team ->[B]<- Bomb on B; needbackup"
+alias    "shx_radio_bombDown"    "say_team -> Bomb down <-; needbackup"
 
 //Alias: Radio-Toggle
-alias    "+shx_radio"    "bind w enemyspot; bind a shx_radio_BombA; bind s shx_radio_BombB; bind SPACE shx_radio_Down"
+alias    "+shx_radio"    "bind w enemyspot; bind a shx_radio_bombA; bind s shx_radio_bombB; bind SPACE shx_radio_bombDown"
 alias    "-shx_radio"    "bind w +move_f; bind a +move_l; bind s +move_b; bind SPACE +al_jump"
 
 // MOVEMENT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

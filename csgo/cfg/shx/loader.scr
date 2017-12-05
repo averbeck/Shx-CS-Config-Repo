@@ -1,19 +1,22 @@
+// LOGO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+clear
+echo    " "
+echo    " "
+echo    "    If everything seems under control, you're just not going fast enough."
+echo    " "
+echo    "                           + initializing ... +
+echo    "                         ++++++++++++++++++++++++"
+echo    "                       +                          +" 
+echo    "                      +  ~~  Shx Config v2.30  ~~  +"
+echo    "                       +                          +"
+echo    "                         ++++++++++++++++++++++++" 
+//echo  "                           +     loaded ...   +"
+//
 // °°°°°°°°°°°°°°°
 // ° Init Script °
 // °°°°°°°°°°°°°°°
 exec "shx/shx.scr"
 // °°°°°°°°°°°°°°°
-//
-// °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
-// ° Config Reload                                                            °
-// °                                                                          °
-// ° Dieser Eintrag bewirkt, dass die Config bei                              °
-// ° jedem Spielneustart wieder auf die Werte in der "shx-cfg"                °
-// ° zurueckgesetzt wird. Wer also an der Config etwas aendern moechte,       °
-// ° muss dieses in der "shx-cfg" tun oder diesen Aufruf mit "//" ausklammern °
-// °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
-exec "shx/shx_config.cfg"
-// °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 //
 // °°°°°°°°°°°°°°°°°°°°°°°°
 // ° load script settings °
