@@ -7,7 +7,7 @@ echo    " "
 echo    "                           + initializing ... +"
 echo    "                         ++++++++++++++++++++++++"
 echo    "                       +                          +" 
-echo    "                      +  ~~  Shx Config v2.32  ~~  +"
+echo    "                      +  ~~  Shx Config v2.33  ~~  +"
 echo    "                       +                          +"
 echo    "                         ++++++++++++++++++++++++" 
 //echo  "                           +     loaded ...   +"
@@ -22,6 +22,7 @@ exec "shx/shx.scr"
 // ° load script settings °
 // °°°°°°°°°°°°°°°°°°°°°°°°
 exec "shx/settings_script.cfg"
+shx_clanid
 // °°°°°°°°°°°°°°°°°°°°°°°°
 //
 // °°°°°°°°°°°°°°°°°°°°°°
