@@ -1,0 +1,316 @@
+clear
+// LOGO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+echo    " "
+echo    " "
+echo    "    If everything seems under control, you're just not going fast enough."
+echo    " "
+echo    "                           + initializing ... +
+echo    "                         ++++++++++++++++++++++++"
+echo    "                       +                          +" 
+echo    "                      +  ~~  Shx Config v2.22  ~~  +"
+echo    "                       +                          +"
+echo    "                         ++++++++++++++++++++++++" 
+//echo  "                           +     loaded ...   +"
+
+alias    "shx_version"    "echo ] Shx CS:GO GUI - Build 2.22"
+alias    "shx_reload"     "exec shx/loader.cfg"
+
+// DEMO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+alias    "demo_ct1"    "record Demo_CT_1; say_team [ Recording Demo CT 1 ]"
+alias    "demo_t1"     "record Demo_T_1; say_team [ Recording Demo T 1 ]"
+alias    "demo_ct2"    "record Demo_CT_2; say_team [ Recording Demo CT 2 ]"
+alias    "demo_t2"     "record Demo_T_2; say_team [ Recording Demo T 2 ]"
+
+alias    "demo_stop"    "stop; say_team [ Recording stopped! ]"
+
+// SCORES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+alias    "+net-scores"    "net_graph 1; +showscores"
+alias    "-net-scores"    "-showscores; net_graph 0"
+
+alias    "+next-scores"    "+showscores; timeleft; room_type 0"
+alias    "-next-scores"    "-showscores"
+
+// LANSERVER +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+alias    "lan_settings"    "exec shx/settings_lan.cfg"
+
+alias    "start_server"    "lan_settings; map de_dust2"
+
+// BUY +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Alias: Einkauf - Granaten
+alias    "flgren"    "buy flashbang; wp_equip"
+alias    "hegren"    "buy hegrenade; wp_equip"
+alias    "smgren"    "buy smokegrenade; wp_equip"
+alias    "degren"    "buy decoy; wp_equip"
+alias    "ingren"    "buy molotov; buy incgrenade; wp_equip"
+
+//Alias: Einkauf - Ruestung
+alias    "vest"        "buy vest; wp_equip"
+alias    "vesthelm"    "buy vesthelm; wp_equip"
+alias    "armor"       "buy vesthelm; buy vest; ar_defuser; wp_equip"
+
+//Alias: Einkauf - Munition
+alias    "ammo"        "buyammo1; buyammo2"
+
+//Alias: Einkauf - Ausruestung
+alias    "nvgs"       "buy nvgs"
+alias    "defuser"    "buy defuser"
+alias    "taser"      "buy taser"
+
+//Alias: Einkauf - Pistolen
+alias    "glock-p2000"    "buy glock; buy hkp2000; wp_equip"
+alias    "tec9-57"        "buy tec9; buy fiveseven; wp_equip"
+alias    "deagle"         "buy deagle; wp_equip"
+alias    "p250"           "buy p250; wp_equip"
+alias    "elite"          "buy elite; wp_equip"
+
+//Alias: Einkauf - Rifles
+alias    "galilar-famas"    "buy galilar; buy famas; wp_equip"
+alias    "ak47-m4a1"        "buy ak47; buy m4a1; wp_defuser ; wp_equip"
+alias    "sg556-aug"        "buy sg556; buy aug; wp_equip"
+alias    "ssg08"            "buy ssg08; wp_equip"
+alias    "awp"              "buy awp; wp_equip"
+alias    "g3sg1-scar20"     "buy g3sg1; buy scar20; wp_equip"
+
+//Alias: Einkauf - Shotguns
+alias    "nova"        "buy nova; wp_equip"
+alias    "xm1014"      "buy xm1014; wp_equip"
+alias    "saw-mag7"    "buy mag7; buy sawedoff; wp_equip"
+
+//Alias: Einkauf - SMGs
+alias    "mp7"          "buy mp7; wp_equip"
+alias    "mp9-mac10"    "buy mp9; buy mac10; wp_equip"
+alias    "p90"          "buy p90; wp_equip"
+alias    "ump45"        "buy ump45; wp_equip"
+alias    "bizon"        "buy bizon; wp_equip"
+
+////Alias: Einkauf - MG
+alias    "m249"     "buy m249; wp_equip"
+alias    "negev"    "buy negev; wp_equip"
+
+// MISC ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Alias: Bestätigungston 
+alias    "ackn"    "snd_playsounds Buttons.snd3"
+
+//Alias: Leeres Alias als Platzhalter
+alias    "null"    ""
+
+//Alias: Setzt alle Waffenwechsel- und Bewegungs-Cycle an den Anfangspunkt
+alias    "recyc_all"    "recyc_wp; recyc_mov"
+
+//Alias: Schiessen
+alias    "+al_attack"    "+attack; mov_ais; spec_prev"
+alias    "-al_attack"    "-attack"
+
+//Alias: Special Weaponmode
+alias    "+al_attack2"    "+attack2; spec_next"
+alias    "-al_attack2"    "-attack2"
+
+//Alias: Bombe legen / entschaerfen
+alias    "+plnt_defu"    "use weapon_knife; use weapon_c4; say_plntdefu; +attack; +use"
+alias    "-plnt_defu"    "-attack; -use; bstgun"
+
+//Toggle: Crosshair Colour
+alias    "shx_cyclecrcolour"      "white_cyclecrcolour"
+alias    "red_cyclecrcolour"      "cl_crosshaircolor 5; cl_crosshaircolor_r 255; cl_crosshaircolor_g 0; cl_crosshaircolor_b 0; alias shx_cyclecrcolour white_cyclecrcolour; ackn"
+alias    "white_cyclecrcolour"    "cl_crosshaircolor 5; cl_crosshaircolor_r 255; cl_crosshaircolor_g 255; cl_crosshaircolor_b 255; alias shx_cyclecrcolour black_cyclecrcolour; ackn"
+alias    "black_cyclecrcolour"    "cl_crosshaircolor 5; cl_crosshaircolor_r 0; cl_crosshaircolor_g 0; cl_crosshaircolor_b 0; alias shx_cyclecrcolour red_cyclecrcolour; ackn"
+
+//Toggle: Dynamic Crosshair
+alias    "shx_togglecrdynamic"    "on_togglecrdynamic"
+alias    "on_togglecrdynamic"     "cl_crosshairstyle 3; echo Dam~~~Crosshair~<dynamic>; alias shx_togglecrdynamic off_togglecrdynamic; ackn"
+alias    "off_togglecrdynamic"    "cl_crosshairstyle 4; echo Dam~~~Crosshair~<static>; alias shx_togglecrdynamic on_togglecrdynamic; ackn"
+
+//Toggle: Ingame Voice
+alias    "shx_cyclevoice"     "off_cyclevoice;"
+alias    "low_cyclevoice"     "voice_system_enable 1; voice_enable 1; voice_scale 0.5; echo Dam~~~Voice~<50%>; alias shx_cyclevoice mid_cyclevoice; ackn"
+alias    "mid_cyclevoice"     "voice_scale 0.75; echo Dam~~~Voice~<75%>; alias shx_cyclevoice full_cyclevoice; ackn"
+alias    "full_cyclevoice"    "voice_scale 1; echo Dam~~~Voice~<100%>; alias shx_cyclevoice off_cyclevoice; ackn"
+alias    "off_cyclevoice"     "voice_system_enable 0; voice_enable 0; voice_scale 0; echo Dam~~~Voice~<off>; alias shx_cyclevoice low_cyclevoice; ackn"
+
+alias    "+voicerecord_sec"    "+voicerecord"
+alias    "-voicerecord_sec"    "-voicerecord"
+
+// MOVEMENT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Alias: Vorwaerts
+alias    "+move_f"    "+forward"
+alias    "-move_f"    "-forward"
+
+//Alias: Rueckwaerts
+alias    "+move_b"    "+back"
+alias    "-move_b"    "-back"
+
+//Alias: Links
+alias    "+move_l"    "+moveleft"
+alias    "-move_l"    "-moveleft"
+
+//Alias: Rechts
+alias    "+move_r"    "+moveright"
+alias    "-move_r"    "-moveright"
+
+//Alias: Ducken
+alias    "+al_duck"    "+duck; mov_dis"
+alias    "-al_duck"    "-duck; mov_dis"
+
+//Alias: Setzt alle Bewegungs-Cycle an den Anfangspunkt
+alias    "recyc_mov"    alias tgl_sneak tgl_sneak_1; alias tgl_duck tgl_duck_1; -speed; -movedown; -duck"
+
+//Toggle: Ducken bis zum naechsten Tastendruck
+alias    "tgl_duck"      "tgl_duck_1"
+alias    "tgl_duck_1"    "alias tgl_duck tgl_duck_2; +duck; msg_duck_1; mov_dis; spec_menu"
+alias    "tgl_duck_2"    "alias tgl_duck tgl_duck_1; -duck; msg_duck_2"
+
+//Alias: Schleichen
+alias    "+al_sneak"    "+speed; mov_sid"
+alias    "-al_sneak"    "-speed; mov_sid"
+
+//Toggle: Schleichen bis zum naechsten Tastendruck
+alias    "tgl_sneak"      "tgl_sneak_1"
+alias    "tgl_sneak_1"    "alias tgl_sneak tgl_sneak_2; +speed"
+alias    "tgl_sneak_2"    "alias tgl_sneak tgl_sneak_1; -speed"
+
+//Alias: Sprung
+alias    "+al_jump"    "+jump; spec_mode" 
+alias    "-al_jump"    "-jump"
+
+//Toggle: Schiessen unterbricht Schleichen
+alias    "act_ais"      "-speed; alias tgl_sneak tgl_sneak_1"
+alias    "tgl_ais_1"    "alias tgl_ais tgl_ais_2; alias mov_ais act_ais"
+alias    "tgl_ais_2"    "alias tgl_ais tgl_ais_1; alias mov_ais null"
+
+//Toggle: Ducken unterbricht Schleichen
+alias    "act_dis"      "-speed; alias tgl_sneak tgl_sneak_1"
+alias    "tgl_dis_1"    "alias tgl_dis tgl_dis_2; alias mov_dis act_dis"
+alias    "tgl_dis_2"    "alias tgl_dis tgl_dis_1; alias mov_dis null"
+
+//Toggle: Schleichen unterbricht Ducken
+alias    "act_sid"      "-duck; alias tgl_duck tgl_duck_1"
+alias    "tgl_sid_1"    "alias tgl_sid tgl_sid_2; alias mov_sid act_sid"
+alias    "tgl_sid_2"    "alias tgl_sid tgl_sid_1; alias mov_sid null"
+
+//Toggle: BunnyJump
+alias    "bunny"     "bunny1"
+alias    "bunny1"    "bind MWHEELDOWN +jump; bind MWHEELUP +jump; alias bunny bunny2"
+alias    "bunny2"    "bind MWHEELDOWN wp_hegren; bind MWHEELUP wp_flgren; alias bunny bunny1"
+
+//DISPLAY+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Alias: Text Filter
+alias    "default_filter"    "con_filter_enable 2; con_filter_text Dam; con_filter_text_out Player:"
+default_filter
+
+//Toggle: Text on Screen
+alias    "shx_textonscreen"    "on_textonscreen"
+alias    "on_textonscreen"     "developer 1; echo Dam~~~TextOnScreen~<on>; alias shx_textonscreen off_textonscreen; ackn"
+alias    "off_textonscreen"    "echo Dam~~~TextOnScreen~<off>; developer 0; alias shx_textonscreen on_textonscreen; ackn"
+
+//Toggle: Display Damage
+alias    "shx_displaydamage"    "off_displaydamage"
+alias    "on_displaydamage"     "con_filter_enable 2; con_filter_text Dam; con_filter_text_out Player:; echo Dam~~~DisplayDamage~<on>; alias reset_filter on_displaydamage; alias shx_displaydamage off_displaydamage; ackn"
+alias    "off_displaydamage"    "con_filter_enable 0; alias reset_filter null; echo Dam~~~DisplayDamage~<off>; alias shx_displaydamage on_displaydamage; ackn"
+
+//WEAPONS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Alias: Defuser automatisch kaufen (Default = off)
+alias    "wp_defuser"    "null"
+alias    "ar_defuser"    "null"
+
+//Alias: Wechselt zur eingestellten Waffe nach dem Kauf
+alias    "wp_equip"    "wp_bst"
+
+//Alias: Vorherige Waffe
+alias    "wp_prev"    "recyc_wp; invprev"
+
+//Alias: Naechste Waffe
+alias    "wp_next"    "recyc_wp; invnext"
+
+//Alias: Zuletzt genutzte Waffe
+alias    wp_last"    "recyc_wp; lastinv"
+
+//Alias: Waffenwechsel zur besten verfuegbaren Waffe
+alias    "wp_bst"    "recyc_wp; bstgun"
+alias    "bstgun"    "wp_knife; wp_secgun; wp_prigun"
+
+//Alias: Waffenwechsel zur Primaerwaffe
+alias    "wp_pri"       "recyc_wp; wp_prigun"
+alias    "wp_prigun"    "slot1"
+
+//Alias: Waffenwechsel zur Sekundaerwaffe
+alias    "wp_sec"    "recyc_wp; wp_secgun"
+alias    "wp_secgun"    "slot2"
+
+//Alias: Waffenwechsel zum Messer
+alias    "wp_knife"    "recyc_wp; use weapon_knife"
+
+//Alias: Waffenwechsel zur HE-Granate
+alias    "wp_hegren"    "recyc_wp; use weapon_hegrenade"
+
+//Alias: Waffenwechsel zur Blend-Granate
+alias    "wp_flgren"    "recyc_wp; use weapon_flashbang"
+
+//Alias: Waffenwechsel zur Rauch-Granate
+alias    "wp_smgren"    "recyc_wp; use weapon_smokegrenade"
+
+//Alias: Waffenwechsel zur Decoy-Granate
+alias    "wp_degren"    "recyc_wp; use weapon_decoy"
+
+//Alias: Waffenwechsel zur Brand-Granate
+alias    "wp_ingren"    "recyc_wp; use weapon_incgrenade"
+
+//Alias: Waffenwechsel zum C4-Sprengstoff
+alias    "wp_c4"    "recyc_wp; use weapon_c4"
+
+//Cycle: Waffenwechsel zwischen bester Waffe und Sekundaerwaffe
+alias    "wpcyc_bp"      "wpcyc_bp_1"
+alias    "wpcyc_bp_1"    "alias wpcyc_bp wpcyc_bp_2; recyc_bp; use weapon_knife; wp_secgun"
+alias    "wpcyc_bp_2"    "alias wpcyc_bp wpcyc_bp_1; recyc_bp; bstgun"
+
+//Cycle: Waffenwechsel zwischen bester Waffe und Messer
+alias    "wpcyc_bk"      "wpcyc_bk_1"
+alias    "wpcyc_bk_1"    "alias wpcyc_bk wpcyc_bk_2; recyc_bk; bstgun"
+alias    "wpcyc_bk_2"    "alias wpcyc_bk wpcyc_bk_1; recyc_bk; use weapon_knife"
+
+//Cycle: Waffenwechsel zwischen Sekundaerwaffe und Messer
+alias    "wpcyc_pk"      "wpcyc_pk_1"
+alias    "wpcyc_pk_1"    "alias wpcyc_pk wpcyc_pk_2; recyc_pk; use weapon_knife; wp_secgun"
+alias    "wpcyc_pk_2"    "alias wpcyc_pk wpcyc_pk_1; recyc_pk; use weapon_knife"
+
+//Cycle: Waffenwechsel zwischen bester Waffe, Sekundaerwaffe und Messer
+alias    "wpcyc_bpk"      "wpcyc_bpk_1"
+alias    "wpcyc_bpk_1"    "alias wpcyc_bpk wpcyc_bpk_2; recyc_bpk; bstgun"
+alias    "wpcyc_bpk_2"    "alias wpcyc_bpk wpcyc_bpk_3; recyc_bpk; use weapon_knife; wp_secgun"
+alias    "wpcyc_bpk_3"    "alias wpcyc_bpk wpcyc_bpk_1; recyc_bpk; use weapon_knife"
+
+//Cycle: Waffenwechsel zwischen HE-Granate, Blend-Granate und Rauch-Granate
+alias    "wpcyc_hfs"      "wpcyc_hfs_1"
+alias    "wpcyc_hfs_1"    "alias wpcyc_hfs wpcyc_hfs_2; recyc_hfs; use weapon_smokegrenade; use weapon_flashbang; use weapon_hegrenade;"
+alias    "wpcyc_hfs_2"    "alias wpcyc_hfs wpcyc_hfs_3; recyc_hfs; use weapon_smokegrenade; use weapon_flashbang"
+alias    "wpcyc_hfs_3"    "alias wpcyc_hfs wpcyc_hfs_1; recyc_hfs; use weapon_smokegrenade"
+
+//Cycle: Waffenwechsel zwischen Rauch-Granate, Decoy-Granate und Molotow
+alias    "wpcyc_dms"      "wpcyc_dms_1"
+alias    "wpcyc_dms_1"    "alias wpcyc_dms wpcyc_dms_2; recyc_dms; use weapon_smokegrenade; use weapon_incgrenade; use weapon_molotov; use weapon_decoy"
+alias    "wpcyc_dms_2"    "alias wpcyc_dms wpcyc_dms_3; recyc_dms; use weapon_smokegrenade; use weapon_incgrenade; use weapon_molotov"
+alias    "wpcyc_dms_3"    "alias wpcyc_dms wpcyc_dms_1; recyc_dms; use weapon_smokegrenade"
+
+//Alias: Setzt jeweils die anderen Waffenwechsel-Cycle an den Anfangspunkt
+alias    "recyc_bp"     "alias wpcyc_bk wpcyc_bk_1; alias wpcyc_pk wpcyc_pk_1; alias wpcyc_bpk wpcyc_bpk_1; alias wpcyc_hfs wpcyc_hfs_1; alias wpcyc_dms wpcyc_dms_1"
+alias    "recyc_bk"     "alias wpcyc_bp wpcyc_bp_1; alias wpcyc_pk wpcyc_pk_1; alias wpcyc_bpk wpcyc_bpk_1; alias wpcyc_hfs wpcyc_hfs_1; alias wpcyc_dms wpcyc_dms_1"
+alias    "recyc_pk"     "alias wpcyc_bp wpcyc_bp_1; alias wpcyc_bk wpcyc_bk_1; alias wpcyc_bpk wpcyc_bpk_1; alias wpcyc_hfs wpcyc_hfs_1; alias wpcyc_dms wpcyc_dms_1"
+alias    "recyc_bpk"    "alias wpcyc_bp wpcyc_bp_1; alias wpcyc_bk wpcyc_bk_1; alias wpcyc_pk wpcyc_pk_1; alias wpcyc_hfs wpcyc_hfs_1; alias wpcyc_dms wpcyc_dms_1"
+alias    "recyc_hfs"    "alias wpcyc_bp wpcyc_bp_1; alias wpcyc_bk wpcyc_bk_1; alias wpcyc_pk wpcyc_pk_1; alias wpcyc_bpk wpcyc_bpk_1; alias wpcyc_dms wpcyc_dms_1"
+alias    "recyc_dms"    "alias wpcyc_bp wpcyc_bp_1; alias wpcyc_bk wpcyc_bk_1; alias wpcyc_pk wpcyc_pk_1; alias wpcyc_bpk wpcyc_bpk_1; alias wpcyc_hfs wpcyc_hfs_1"
+
+//Alias: Setzt alle Waffenwechsel-Cycle an den Anfangspunkt
+alias    "recyc_wp"    "alias wpcyc_bp wpcyc_bp_1; alias wpcyc_bk wpcyc_bk_1; alias wpcyc_pk wpcyc_pk_1; alias wpcyc_bpk wpcyc_bpk_1; alias wpcyc_hfs wpcyc_hfs_1; alias wpcyc_dms wpcyc_dms_1"
+
+//FUN+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Glock Spam
+alias    "b_glock"     "buy glock; use weapon_glock; drop"
+alias    "sp_glock"    "b_glock; b_glock; b_glock; b_glock; b_glock; b_glock; b_glock ;b_glock; b_glock; b_glock; b_glock; b_glock; b_glock; b_glock; b_glock; b_glock; b_glock"
