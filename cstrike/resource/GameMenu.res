@@ -70,10 +70,15 @@
 	}
 	"13"
 	{
+	  "label" "ACHIEVEMENTS"
+    "command" "OpenCSAchievementsDialog" 
+  }
+  "14"
+	{
 		"label" "#GameUI_GameMenu_Options"
 		"command" "OpenOptionsDialog"
 	}
-	"14"
+	"15"
 	{
 		"label" "#GameUI_GameMenu_Quit"
 		"command" "Quit"

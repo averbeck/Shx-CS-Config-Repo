@@ -17,7 +17,7 @@ alias _demo4			          	"record Demo_T_2; say_team [ Recording Demo T 2 ]"
 
 alias _stopsave			       		"stop; say_team [ Recording stopped! ]"
 
-alias +esl-scores		       		"net_graphheight 75; net_graph 3; +showscores"
+alias +esl-scores		       		"net_graphheight 75; net_graph 1; +showscores"
 alias -esl-scores			       	"-showscores; net_graph 0"
 
 alias +next-scores			    	"+showscores; timeleft; room_type 0"
