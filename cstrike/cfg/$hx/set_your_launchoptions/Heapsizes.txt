@@ -1,0 +1,9 @@
+für 4GB -heapsize 4194304
+
+für 3GB: -heapsize 3145728
+
+für 2GB: -heapsize 2097152
+
+für 1GB: -heapsize 1048576
+
+für 512MB: -heapsize 524288

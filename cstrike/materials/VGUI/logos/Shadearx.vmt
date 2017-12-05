@@ -1,0 +1,7 @@
+LightmappedGeneric
+{
+	"$basetexture"	"vgui\logos\dragon 800"
+	"$translucent" "1"
+	"$decal" "1"
+	"$decalscale" "0.250"
+}
