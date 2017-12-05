@@ -147,10 +147,11 @@ alias     "tgl_report_1" "alias tgl_report tgl_report_2; exec $hx/msg_reports_on
 alias     "tgl_report_2" "alias tgl_report tgl_report_1; exec $hx/msg_reports_off.cfg; msg_report_2"
 
 
-//Toggle: Crosshair Alpha (Custom)
-alias CAlpha "CAlpha1"
-alias CAlpha1 "cl_crosshairusealpha 1; alias CAlpha CAlpha2"
-alias CAlpha2 "cl_crosshairusealpha 0; alias CAlpha CAlpha1"
+//Toggle: Crosshair Colour (Custom)
+alias CrColour "CrColour_red"
+alias CrColour_red   "cl_crosshaircolor 5; cl_crosshaircolor_r 255; cl_crosshaircolor_g 0; cl_crosshaircolor_b 0; alias CrColour CrColour_white"
+alias CrColour_white "cl_crosshaircolor 5; cl_crosshaircolor_r 255; cl_crosshaircolor_g 255; cl_crosshaircolor_b 255; alias CrColour CrColour_black"
+alias CrColour_black "cl_crosshaircolor 5; cl_crosshaircolor_r 0; cl_crosshaircolor_g 0; cl_crosshaircolor_b 0; alias CrColour CrColour_red"
 
 //Toggle: Ingame Voice (Custom)
 alias InVoice "InVoice1"
