@@ -87,7 +87,7 @@ shx_alt_layout
 
 ### CROSSHAIR ###
 shx_cycle_crosshair_colour
-shx_toggle_crosshair_dynamic
+shx_cycle_crosshair_dynamic
 shx_red_crosshair
 shx_white_crosshair
 shx_black_crosshair
@@ -97,22 +97,21 @@ shx_toggle_osd
 shx_toggle_display_damage
 
 ### WEAPON SELECT ###
-wp_bst
-wp_pri
-wp_sec
-wp_knife
-wp_hegren
-wp_flgren
-wp_smgren
-wp_degren
-wp_ingren
-wp_c4
+shx_wp_best
+shx_wp_pri
+shx_wp_sec
+shx_wp_knife
+shx_wp_hegren
+shx_wp_flgren
+shx_wp_smgren
+shx_wp_degren
+shx_wp_ingren
+shx_wp_c4
 
-### WEAPON CYCLE ###
-wp_cycle_bp
-wp_cycle_bk
-wp_cycle_pk
-wp_cycle_bpk
-wp_cycle_hfs
-wp_cycle_dms
-reset_cycle_bp
+### WEAPON CYCLES ###
+shx_wp_cycle_bp
+shx_wp_cycle_bk
+shx_wp_cycle_pk
+shx_wp_cycle_bpk
+shx_wp_cycle_hfs
+shx_wp_cycle_dms
