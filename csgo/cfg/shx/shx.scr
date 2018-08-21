@@ -80,8 +80,8 @@ alias    "empty"    ""
 alias    "ackn"    "empty"    // "snd_playsounds Buttons.snd3" (snd_playsounds has been banned)
 
 // Alias: Alternative Sprechtaste
-alias    "+alt_voicerecord"    "+voicerecord"
-alias    "-alt_voicerecord"    "-voicerecord"
+alias    "+shx_voicerecord"    "+voicerecord"
+alias    "-shx_voicerecord"    "-voicerecord"
 
 // Toggle: Sprachlautstaerke
 alias    "shx_cycle_voice"    "0_cycle_voice;"
@@ -127,7 +127,7 @@ alias    "white_cycle_chc"               "shx_white_crosshair; alias shx_cycle_c
 alias    "black_cycle_chc"               "shx_green_crosshair; alias shx_cycle_crosshair_colour red_cycle_chc; ackn"
 
 // Toggle: Dynamisches Fadenkreuz
-alias    "shx_cycle_crosshair_dynamic"    "static_cycle_chd"
+alias    "shx_cycle_crosshair_dynamic"    "double_cycle_chd"
 alias    "dynamic_cycle_chd"              "cl_crosshairstyle 3; echo Dam____Crosshair_=_dynamic; alias shx_cycle_crosshair_dynamic double_cycle_chd; ackn"
 alias    "double_cycle_chd"               "cl_crosshairstyle 2; cl_crosshairsize 2.5; cl_crosshairgap 9; echo Dam____Crosshair_=_double; alias shx_cycle_crosshair_dynamic static_cycle_chd; ackn"
 alias    "static_cycle_chd"               "cl_crosshairstyle 4; cl_crosshairsize 1.5; cl_crosshairgap 5; echo Dam____Crosshair_=_static; alias shx_cycle_crosshair_dynamic dynamic_cycle_chd; ackn"

@@ -16,6 +16,8 @@ shx_clear_vision
 
 shx_toggle_xray
 
+shx_voicerecord
+
 ### LAN ###
 shx_lan
 shx_lan_start
