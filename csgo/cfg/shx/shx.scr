@@ -1,5 +1,5 @@
 
-alias    "shx_version"    "echo ] Shx CS:GO Config - Build 2.35a"
+alias    "shx_version"    "echo ] Shx CS:GO Config - Build 2.35"
 alias    "shx_reload"     "exec shx/loader.scr"
 
 // DEMO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -148,10 +148,10 @@ alias    "dynamic_toggle_radar"        "shx_radar_dynamic; echo Dam____Radshx_ar
 
 // Toggle: Radarzoom
 
-alias    "shx_radar_zoom_last"    "35_radar_zoom"
+alias    "shx_radar_zoom_last"    "40_radar_zoom"
 
-alias    "shx_radar_zoom_in"      "30_radar_zoom"
-alias    "shx_radar_zoom_out"     "40_radar_zoom"
+alias    "shx_radar_zoom_in"      "35_radar_zoom"
+alias    "shx_radar_zoom_out"     "45_radar_zoom"
 
 alias    "25_radar_zoom"     "cl_radar_scale 0.25; alias shx_radar_zoom_out empty; alias shx_radar_zoom_in 30_radar_zoom; alias shx_radar_zoom_last 25_radar_zoom; ackn"
 alias    "30_radar_zoom"     "cl_radar_scale 0.30; alias shx_radar_zoom_out 25_radar_zoom; alias shx_radar_zoom_in 35_radar_zoom; alias shx_radar_zoom_last 30_radar_zoom; ackn"
