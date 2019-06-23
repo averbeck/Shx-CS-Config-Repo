@@ -9,9 +9,6 @@ demo_stop
 
 shx_scores
 
-shx_enable_bombfinder
-shx_disable_bombfinder
-
 shx_clear_vision
 
 shx_toggle_xray

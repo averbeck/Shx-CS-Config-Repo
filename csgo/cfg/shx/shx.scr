@@ -1,5 +1,5 @@
 
-alias    "shx_version"    "echo ] Shx CS:GO Config - Build 2.35"
+alias    "shx_version"    "echo ] Shx CS:GO Config - Build 2.36"
 alias    "shx_reload"     "exec shx/loader.scr"
 
 // DEMO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -91,10 +91,6 @@ alias    "50_cycle_voice"     "voice_scale 0.5; echo Dam____Voice_=_50%; alias s
 alias    "75_cycle_voice"     "voice_scale 0.75; echo Dam____Voice_=_75%; alias shx_cycle_voice 100_cycle_voice; ackn"
 alias    "100_cycle_voice"    "voice_scale 1; echo Dam____Voice_=_100%; alias shx_cycle_voice 0_cycle_voice; ackn"
 alias    "0_cycle_voice"      "voice_enable 0; voice_scale 0; echo Dam____Voice_=_off; alias shx_cycle_voice 5_cycle_voice; ackn"
-
-// Alias: Bombfinder
-alias    "shx_enable_bombfinder"      "gameinstructor_enable 1; cl_radar_icon_scale_min 1.0; cl_radar_always_centered 1; cl_radar_rotate 1; cl_radar_scale 1"
-alias    "shx_disable_bombfinder"     "gameinstructor_enable 0; shx_radar_type_last; shx_radar_zoom_last"
 
 // Alias: Texturen/Decals bereinigen (Blut entfernen)
 alias    "shx_clear_vision"    "r_cleardecals"
@@ -197,13 +193,12 @@ alias    "default_a"          "bind a +move_l"
 alias    "default_s"          "bind s +move_b"
 alias    "default_d"          "bind d +move_r"
 alias    "default_space"      "bind SPACE +move_jump"
-alias    "+shx_alt_layout"    "bind w enemyspot; bind a shx_radio_bomb_a; bind s shx_radio_bomb_b; bind SPACE shx_radio_bomb_down; gameinstructor_enable 0; shx_clear_vision"
-alias    "-shx_alt_layout"    "default_w; default_a; default_s; default_d; default_space; shx_disable_bombfinder"
+alias    "+shx_alt_layout"    "bind w enemyspot; bind a shx_radio_bomb_a; bind s shx_radio_bomb_b; bind SPACE shx_radio_bomb_down; shx_clear_vision"
+alias    "-shx_alt_layout"    "default_w; default_a; default_s; default_d; default_space"
 
 // ANGRIFF ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Schiessen
-
 alias    "+alt_attack"    "+attack; spec_prev"
 alias    "-alt_attack"    "-attack; move_ais"
 
