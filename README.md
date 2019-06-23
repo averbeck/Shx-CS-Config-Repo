@@ -12,4 +12,4 @@ Can be found in the *StartParameters.txt* file
 The threads flag allows Counter-Strike to use more then one thread/cpu-core at once.
 Always use the same number or fewer threads than your cpu supports.
 
-    -console -novid -high -threads 4 -nojoy -128 tick -language English
+    -console -novid -high -threads 4 -nojoy -tickrate 128 -language English

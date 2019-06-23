@@ -1,1 +1,1 @@
--console -novid -high -threads 4 -nojoy -128 tick -language English
+-console -novid -high -threads 4 -nojoy -tickrate 128 -language English
