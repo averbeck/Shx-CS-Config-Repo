@@ -1,6 +1,8 @@
 shx_version
 shx_reload
 
+shx_train
+
 demo_ct1
 demo_t1
 demo_ct2
@@ -12,8 +14,6 @@ shx_scores
 shx_clear_vision
 
 shx_toggle_xray
-
-shx_voicerecord
 
 ### LAN ###
 shx_lan
@@ -69,6 +69,7 @@ shx_radar_zoom_in
 shx_radar_zoom_out
 shx_radar_default
 shx_radar_static
+shx_radar_dynamic
 
 ### VIEWMODEL ###
 shx_toggle_viewmodel
@@ -83,13 +84,6 @@ shx_radio_bomb_a
 shx_radio_bomb_b
 shx_radio_bomb_down
 shx_alt_layout
-
-### CROSSHAIR ###
-shx_cycle_crosshair_colour
-shx_cycle_crosshair_dynamic
-shx_red_crosshair
-shx_white_crosshair
-shx_black_crosshair
 
 ### ON SCREEN DISPLAY ###
 shx_toggle_osd

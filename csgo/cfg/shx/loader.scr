@@ -6,7 +6,7 @@ echo    " "
 echo    "                         + initializing ... +"
 echo    "                       ++++++++++++++++++++++++"
 echo    "                     +                          +" 
-echo    "                    +  ~~  Shx Config v2.36  ~~  +"
+echo    "                    +  ~~  Shx Config v2.37  ~~  +"
 echo    "                     +                          +"
 echo    "                       ++++++++++++++++++++++++" 
 //echo  "                         +     done ...     +"
@@ -40,6 +40,5 @@ echo " "
 // °°°°°°°°°°°°°°°°°°°°°°°°°°°°
 // ° Save changes to main cfg °
 // °°°°°°°°°°°°°°°°°°°°°°°°°°°°
-mat_savechanges
 host_writeconfig
 // °°°°°°°°°°°°°°°°°°°°°°°°°°°°

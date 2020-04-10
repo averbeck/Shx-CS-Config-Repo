@@ -1,5 +1,5 @@
 
-alias    "shx_version"    "echo ] Shx CS:GO Config - Build 2.36"
+alias    "shx_version"    "echo ] Shx CS:GO Config - Build 2.37"
 alias    "shx_reload"     "exec shx/loader.scr"
 
 // DEMO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -21,7 +21,7 @@ alias    "-shx_scores"    "-showscores; net_graph 0"
 alias    "shx_lan"          "exec shx/settings_lan.cfg"
 alias    "shx_lan_start"    "shx_lan; map de_dust2"
 
-alias    "shx_train"        "exec train/menu_open.cfg"
+alias    "shx_train"        "exec shx/train/menu_open.cfg"
 
 // BUY +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -79,13 +79,10 @@ alias    "empty"    ""
 // Alias: Aktionsbestaetigung  
 alias    "ackn"    "empty"    // "snd_playsounds Buttons.snd3" (snd_playsounds has been banned)
 
-// Alias: Alternative Sprechtaste
-alias    "+shx_voicerecord"    "+voicerecord"
-alias    "-shx_voicerecord"    "-voicerecord"
-
 // Toggle: Sprachlautstaerke
 alias    "shx_cycle_voice"    "0_cycle_voice;"
-alias    "5_cycle_voice"      "voice_enable 1; voice_scale 0.25; echo Dam____Voice_=_5%; alias shx_cycle_voice 25_cycle_voice; ackn"
+alias    "5_cycle_voice"      "voice_enable 1; voice_scale 0.05; echo Dam____Voice_=_2%; alias shx_cycle_voice 10_cycle_voice; ackn"
+alias    "10_cycle_voice"     "voice_scale 0.1; echo Dam____Voice_=_25%; alias shx_cycle_voice 25_cycle_voice; ackn"
 alias    "25_cycle_voice"     "voice_scale 0.25; echo Dam____Voice_=_25%; alias shx_cycle_voice 50_cycle_voice; ackn"
 alias    "50_cycle_voice"     "voice_scale 0.5; echo Dam____Voice_=_50%; alias shx_cycle_voice 75_cycle_voice; ackn"
 alias    "75_cycle_voice"     "voice_scale 0.75; echo Dam____Voice_=_75%; alias shx_cycle_voice 100_cycle_voice; ackn"
@@ -110,17 +107,6 @@ alias    "default_toggle_clanid"    "no_clanid; echo Dam____Clan-ID_=_off; alias
 alias    "custom_toggle_clanid"     "shx_clanid; echo Dam____Clan-ID_=_on; alias shx_toggle_clanid default_toggle_clanid; ackn"
 
 // FADENKREUZ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// Alias: Crosshair Colour
-alias    "shx_red_crosshair"      "cl_crosshaircolor 5; cl_crosshaircolor_r 255; cl_crosshaircolor_g 0; cl_crosshaircolor_b 0"
-alias    "shx_white_crosshair"    "cl_crosshaircolor 5; cl_crosshaircolor_r 255; cl_crosshaircolor_g 255; cl_crosshaircolor_b 255"
-alias    "shx_green_crosshair"    "cl_crosshaircolor 5; cl_crosshaircolor_r 0; cl_crosshaircolor_g 255; cl_crosshaircolor_b 0"
-
-// Toggle: Fadenkreuzfarbe
-alias    "shx_cycle_crosshair_colour"    "white_cycle_chc"
-alias    "red_cycle_chc"                 "shx_red_crosshair; alias shx_cycle_crosshair_colour white_cycle_chc; ackn"
-alias    "white_cycle_chc"               "shx_white_crosshair; alias shx_cycle_crosshair_colour black_cycle_chc; ackn"
-alias    "black_cycle_chc"               "shx_green_crosshair; alias shx_cycle_crosshair_colour red_cycle_chc; ackn"
 
 // Toggle: Dynamisches Fadenkreuz
 alias    "shx_cycle_crosshair_dynamic"    "double_cycle_chd"
@@ -199,8 +185,10 @@ alias    "-shx_alt_layout"    "default_w; default_a; default_s; default_d; defau
 // ANGRIFF ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Schiessen
-alias    "+alt_attack"    "+attack; spec_prev"
-alias    "-alt_attack"    "-attack; move_ais"
+alias    "+alt_attack"       "+alt_attack_n"
+alias    "-alt_attack"       "-attack; move_ais"
+alias    "+alt_attack_n"     "+attack; spec_prev"
+alias    "+alt_attack_s"     "+attack; -move_f; spec_prev"
 
 // Alias: Special Weaponmode
 alias    "+alt_attack2"    "+attack2; shx_clear_vision; spec_next"
@@ -209,6 +197,10 @@ alias    "-alt_attack2"    "-attack2"
 // Alias: Nachladen
 alias    "+alt_reload"    "+reload; shx_clear_vision"
 alias    "-alt_reload"    "-reload"
+
+alias    "+shx_jumpthrow" "+jump; -attack"
+alias    "-shx_jumpthrow" "-jump"
+
 // BEWEGUNG ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Vorwaerts
@@ -382,12 +374,7 @@ alias    "reset_cycle_dms"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias sh
 // Alias: Setzt alle Waffenwechsel-Cycle an den Anfangspunkt
 alias    "reset_cycle_wp"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
 
-// FUN +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// Toggle: Bunny Jump
-alias    "shx_bunny_jump"    "on_bunny_jump"
-alias    "on_bunny_jump"     "bind MWHEELDOWN +jump; bind MWHEELUP +jump; alias shx_bunny_jump off_bunny_jump"
-alias    "off_bunny_jump"    "bind MWHEELDOWN shx_wp_hegren; bind MWHEELUP shx_wp_flgren; alias shx_bunny_jump on_bunny_jump"
+// SONSTIGES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // invisible char
 // [　]
