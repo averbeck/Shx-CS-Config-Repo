@@ -23,6 +23,21 @@ alias    "shx_lan_start"    "shx_lan; map de_dust2"
 
 alias    "shx_train"        "exec shx/train/menu_open.cfg"
 
+// SLOTS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+alias    "shx_slot1"     "slot1; alias move_aim move_stop"
+alias    "shx_slot2"     "slot2; alias move_aim move_stop"
+alias    "shx_slot3"     "slot3; alias move_aim null"
+alias    "shx_slot4"     "slot4; alias move_aim null"
+alias    "shx_slot5"     "slot5; alias move_aim null"
+alias    "shx_slot6"     "slot6; alias move_aim null"
+alias    "shx_slot7"     "slot7; alias move_aim null"
+alias    "shx_slot8"     "slot8; alias move_aim null"
+alias    "shx_slot9"     "slot9; alias move_aim null"
+alias    "shx_slot10"    "slot10; alias move_aim null"
+alias    "shx_slot11"    "slot11; alias move_aim null"
+alias    "shx_slot12"    "slot12; alias move_aim null"
+
 // BUY +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Einkauf - Granaten
@@ -74,15 +89,15 @@ alias    "negev"    "buy negev; shx_wp_equip"
 // MISC ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Leeres Alias als Platzhalter
-alias    "empty"    ""
+alias    "null"    ""
 
-// Alias: Aktionsbestaetigung  
-alias    "ackn"    "empty"    // "snd_playsounds Buttons.snd3" (snd_playsounds has been banned)
+// Alias: Aktionsbestaetigung
+alias    "ackn"    "null"    // "snd_playsounds Buttons.snd3" (snd_playsounds has been banned)
 
 // Toggle: Sprachlautstaerke
 alias    "shx_cycle_voice"    "0_cycle_voice;"
-alias    "5_cycle_voice"      "voice_enable 1; voice_scale 0.05; echo Dam____Voice_=_2%; alias shx_cycle_voice 10_cycle_voice; ackn"
-alias    "10_cycle_voice"     "voice_scale 0.1; echo Dam____Voice_=_25%; alias shx_cycle_voice 25_cycle_voice; ackn"
+alias    "5_cycle_voice"      "voice_enable 1; voice_scale 0.05; echo Dam____Voice_=_5%; alias shx_cycle_voice 10_cycle_voice; ackn"
+alias    "10_cycle_voice"     "voice_scale 0.1; echo Dam____Voice_=_10%; alias shx_cycle_voice 25_cycle_voice; ackn"
 alias    "25_cycle_voice"     "voice_scale 0.25; echo Dam____Voice_=_25%; alias shx_cycle_voice 50_cycle_voice; ackn"
 alias    "50_cycle_voice"     "voice_scale 0.5; echo Dam____Voice_=_50%; alias shx_cycle_voice 75_cycle_voice; ackn"
 alias    "75_cycle_voice"     "voice_scale 0.75; echo Dam____Voice_=_75%; alias shx_cycle_voice 100_cycle_voice; ackn"
@@ -98,7 +113,7 @@ alias    "shx_toggle_xray"    "incrementvar spec_show_xray 0 1 1; ackn"
 // CLAN ID ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Clan ID Alias Platzhalter
-alias    "shx_clanid"    "empty"
+alias    "shx_clanid"    "null"
 alias    "no_clanid"     "cl_clanid 0"
 
 // Toggle: Clan ID
@@ -135,7 +150,7 @@ alias    "shx_radar_zoom_last"    "40_radar_zoom"
 alias    "shx_radar_zoom_in"      "35_radar_zoom"
 alias    "shx_radar_zoom_out"     "45_radar_zoom"
 
-alias    "25_radar_zoom"     "cl_radar_scale 0.25; alias shx_radar_zoom_out empty; alias shx_radar_zoom_in 30_radar_zoom; alias shx_radar_zoom_last 25_radar_zoom; ackn"
+alias    "25_radar_zoom"     "cl_radar_scale 0.25; alias shx_radar_zoom_out null; alias shx_radar_zoom_in 30_radar_zoom; alias shx_radar_zoom_last 25_radar_zoom; ackn"
 alias    "30_radar_zoom"     "cl_radar_scale 0.30; alias shx_radar_zoom_out 25_radar_zoom; alias shx_radar_zoom_in 35_radar_zoom; alias shx_radar_zoom_last 30_radar_zoom; ackn"
 alias    "35_radar_zoom"     "cl_radar_scale 0.35; alias shx_radar_zoom_out 30_radar_zoom; alias shx_radar_zoom_in 40_radar_zoom; alias shx_radar_zoom_last 35_radar_zoom; ackn"
 alias    "40_radar_zoom"     "cl_radar_scale 0.40; alias shx_radar_zoom_out 35_radar_zoom; alias shx_radar_zoom_in 45_radar_zoom; alias shx_radar_zoom_last 40_radar_zoom; ackn"
@@ -150,7 +165,7 @@ alias    "80_radar_zoom"     "cl_radar_scale 0.80; alias shx_radar_zoom_out 75_r
 alias    "85_radar_zoom"     "cl_radar_scale 0.85; alias shx_radar_zoom_out 80_radar_zoom; alias shx_radar_zoom_in 90_radar_zoom; alias shx_radar_zoom_last 85_radar_zoom; ackn"
 alias    "90_radar_zoom"     "cl_radar_scale 0.90; alias shx_radar_zoom_out 85_radar_zoom; alias shx_radar_zoom_in 95_radar_zoom; alias shx_radar_zoom_last 90_radar_zoom; ackn"
 alias    "95_radar_zoom"     "cl_radar_scale 0.95; alias shx_radar_zoom_out 90_radar_zoom; alias shx_radar_zoom_in 100_radar_zoom; alias shx_radar_zoom_last 95_radar_zoom; ackn"
-alias    "100_radar_zoom"    "cl_radar_scale 1.00; alias shx_radar_zoom_out 95_radar_zoom; alias shx_radar_zoom_in empty; alias shx_radar_zoom_last 100_radar_zoom; ackn"
+alias    "100_radar_zoom"    "cl_radar_scale 1.00; alias shx_radar_zoom_out 95_radar_zoom; alias shx_radar_zoom_in null; alias shx_radar_zoom_last 100_radar_zoom; ackn"
 
 //alias    "shx_radar_zoom_in"     "incrementvar cl_radar_scale 0.2 1 0.1; ackn"
 //alias    "shx_radar_zoom_out"    "incrementvar cl_radar_scale 0.2 1 -0.1; ackn"
@@ -185,21 +200,20 @@ alias    "-shx_alt_layout"    "default_w; default_a; default_s; default_d; defau
 // ANGRIFF ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Schiessen
-alias    "+alt_attack"       "+alt_attack_n"
-alias    "-alt_attack"       "-attack; move_ais"
-alias    "+alt_attack_n"     "+attack; spec_prev"
-alias    "+alt_attack_s"     "+attack; -move_f; spec_prev"
+
+alias    "+shx_attack"    "move_aim; +attack; spec_prev"
+alias    "-shx_attack"    "-attack; move_ais"
 
 // Alias: Special Weaponmode
-alias    "+alt_attack2"    "+attack2; shx_clear_vision; spec_next"
-alias    "-alt_attack2"    "-attack2"
+alias    "+shx_attack2"    "+attack2; shx_clear_vision; spec_next"
+alias    "-shx_attack2"    "-attack2"
 
 // Alias: Nachladen
 alias    "+alt_reload"    "+reload; shx_clear_vision"
 alias    "-alt_reload"    "-reload"
 
-alias    "+shx_jumpthrow" "+jump; -attack"
-alias    "-shx_jumpthrow" "-jump"
+alias    "+shx_jumpthrow"    "+jump; -attack"
+alias    "-shx_jumpthrow"    "-jump"
 
 // BEWEGUNG ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -224,7 +238,7 @@ alias    "+move_crouch"    "+duck; move_dis; shx_clear_vision"
 alias    "-move_crouch"    "-duck"
 
 // Alias: Springen
-alias    "+move_jump"    "+jump; shx_clear_vision; spec_mode" 
+alias    "+move_jump"    "+jump; shx_clear_vision; spec_mode"
 alias    "-move_jump"    "-jump"
 
 // Alias: Schleichen
@@ -241,20 +255,25 @@ alias    "shx_toggle_sneak"    "on_toggle_sneak"
 alias    "on_toggle_sneak"     "alias shx_toggle_sneak off_toggle_sneak; +speed"
 alias    "off_toggle_sneak"    "alias shx_toggle_sneak on_toggle_sneak; -speed"
 
+// Toggle: Schiessen unterbricht Laufen
+alias    "shx_toggle_move_aim"    "alias shx_toggle_move_aim on_toggle_aim"
+alias    "on_toggle_aim"          "alias shx_toggle_move_aim off_toggle_aim; alias move_aim move_stop"
+alias    "off_toggle_aim"         "alias shx_toggle_move_aim on_toggle_aim; alias move_aim null"
+
 // Toggle: Schiessen unterbricht Schleichen
-alias    "shx_toggle_act_ais"    "-speed; alias shx_toggle_sneak on_toggle_sneak"
-alias    "on_toggle_ais"         "alias shx_toggle_ais off_toggle_ais; alias move_ais shx_toggle_act_ais"
-alias    "off_toggle_ais"        "alias shx_toggle_ais on_toggle_ais; alias move_ais empty"
+alias    "shx_toggle_move_ais"    "-speed; alias shx_toggle_sneak on_toggle_sneak"
+alias    "on_toggle_ais"          "alias shx_toggle_ais off_toggle_ais; alias move_ais shx_toggle_move_ais"
+alias    "off_toggle_ais"         "alias shx_toggle_ais on_toggle_ais; alias move_ais null"
 
 // Toggle: Ducken unterbricht Schleichen
 alias    "shx_toggle_act_dis"    "-speed; alias shx_toggle_sneak on_toggle_sneak"
 alias    "on_toggle_dis"         "alias shx_toggle_dis off_toggle_dis; alias move_dis shx_toggle_act_dis"
-alias    "off_toggle_dis"        "alias shx_toggle_dis on_toggle_dis; alias move_dis empty"
+alias    "off_toggle_dis"        "alias shx_toggle_dis on_toggle_dis; alias move_dis null"
 
 // Toggle: Schleichen unterbricht Ducken
 alias    "shx_toggle_act_sid"    "-duck; alias shx_toggle_crouch on_toggle_crouch"
 alias    "on_toggle_sid"         "alias shx_toggle_sid off_toggle_sid; alias move_sid shx_toggle_act_sid"
-alias    "off_toggle_sid"        "alias shx_toggle_sid on_toggle_sid; alias move_sid empty"
+alias    "off_toggle_sid"        "alias shx_toggle_sid on_toggle_sid; alias move_sid null"
 
 // DISPLAY +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -277,91 +296,92 @@ alias    "off_toggle_osd"    "echo Dam____TextOnScreen_=_off; shx_disable_develo
 // Toggle: Display Damage
 alias    "shx_toggle_display_damage"    "off_display_damage"
 alias    "on_display_damage"            "shx_damage_filter; echo Dam____DisplayDamage_=_on; alias shx_reset_filter shx_damage_filter; alias shx_toggle_display_damage off_display_damage; ackn"
-alias    "off_display_damage"           "shx_no_filter; echo Dam____DisplayDamage_=_off; alias shx_reset_filter empty; alias shx_toggle_display_damage on_display_damage; ackn"
+alias    "off_display_damage"           "shx_no_filter; echo Dam____DisplayDamage_=_off; alias shx_reset_filter null; alias shx_toggle_display_damage on_display_damage; ackn"
 
 // WAFFEN ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Defuser automatisch kaufen (Default = off)
-alias    "shx_wp_defuser"    "empty"
-alias    "shx_ar_defuser"    "empty"
+alias    "shx_wp_defuser"    "null"
+alias    "shx_ar_defuser"    "null"
 
 // Alias: Wechselt zur eingestellten Waffe nach dem Kauf
 alias    "shx_wp_equip"    "shx_wp_best"
 
 // Alias: Vorherige Waffe
-alias    "shx_wp_prev"    "reset_cycle_wp; invprev"
+alias    "shx_wp_prev"    "reset_cycle_all; invprev"
 
 // Alias: Naechste Waffe
-alias    "shx_wp_next"    "reset_cycle_wp; invnext"
+alias    "shx_wp_next"    "reset_cycle_all; invnext"
 
 // Alias: Zuletzt genutzte Waffe
-alias    "shx_wp_last"    "reset_cycle_wp; lastinv"
+alias    "shx_wp_last"    "reset_cycle_all; lastinv"
 
 // Alias: Waffenwechsel zur besten verfuegbaren Waffe
-alias    "shx_wp_best"       "reset_cycle_wp; shx_wp_bestgun"
-alias    "shx_wp_bestgun"    "shx_wp_knife; shx_wp_secgun; shx_wp_prigun"
+alias    "shx_wp_best"           "reset_cycle_all; shx_wp_best_select"
+alias    "shx_wp_best_select"    "shx_wp_knife_select; shx_wp_sec_select; shx_wp_pri_select"
 
 // Alias: Waffenwechsel zur Primaerwaffe
-alias    "shx_wp_pri"       "reset_cycle_wp; shx_wp_prigun"
-alias    "shx_wp_prigun"    "slot1"
+alias    "shx_wp_pri"           "reset_cycle_all; shx_wp_pri_select"
+alias    "shx_wp_pri_select"    "slot1; alias move_aim move_stop"
 
 // Alias: Waffenwechsel zur Sekundaerwaffe
-alias    "shx_wp_sec"       "reset_cycle_wp; shx_wp_secgun"
-alias    "shx_wp_secgun"    "slot2"
+alias    "shx_wp_sec"           "reset_cycle_all; shx_wp_sec_select"
+alias    "shx_wp_sec_select"    "slot2; alias move_aim move_stop"
 
 // Alias: Waffenwechsel zum Messer
-alias    "shx_wp_knife"    "reset_cycle_wp; use weapon_knife; shx_clear_vision"
+alias    "shx_wp_knife"           "reset_cycle_all; shx_clear_vision; shx_wp_knife_select"
+alias    "shx_wp_knife_select"    "slot3; alias move_aim null;
 
 // Alias: Waffenwechsel zur HE-Granate
-alias    "shx_wp_hegren"    "reset_cycle_wp; use weapon_hegrenade"
+alias    "shx_wp_hegren"    "reset_cycle_all; alias move_aim null; use weapon_hegrenade"
 
 // Alias: Waffenwechsel zur Blend-Granate
-alias    "shx_wp_flgren"    "reset_cycle_wp; use weapon_flashbang"
+alias    "shx_wp_flgren"    "reset_cycle_all; alias move_aim null; use weapon_flashbang"
 
 // Alias: Waffenwechsel zur Rauch-Granate
-alias    "shx_wp_smgren"    "reset_cycle_wp; use weapon_smokegrenade"
+alias    "shx_wp_smgren"    "reset_cycle_all; alias move_aim null; use weapon_smokegrenade"
 
 // Alias: Waffenwechsel zur Decoy-Granate
-alias    "shx_wp_degren"    "reset_cycle_wp; use weapon_decoy"
+alias    "shx_wp_degren"    "reset_cycle_all; alias move_aim null; use weapon_decoy"
 
 // Alias: Waffenwechsel zur Brand-Granate
-alias    "shx_wp_ingren"    "reset_cycle_wp; use weapon_incgrenade"
+alias    "shx_wp_ingren"    "reset_cycle_all; alias move_aim null; use weapon_incgrenade"
 
 // Alias: Waffenwechsel zum C4-Sprengstoff
-alias    "shx_wp_c4"    "reset_cycle_wp; use weapon_c4"
+alias    "shx_wp_c4"    "reset_cycle_all; alias move_aim null; use weapon_c4"
 
 // Cycle: Waffenwechsel zwischen bester Waffe und Sekundaerwaffe
 alias    "shx_wp_cycle_bp"      "shx_wp_cycle_bp_1"
-alias    "shx_wp_cycle_bp_1"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_2; reset_cycle_bp; use weapon_knife; shx_wp_secgun"
-alias    "shx_wp_cycle_bp_2"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; reset_cycle_bp; shx_wp_bestgun"
+alias    "shx_wp_cycle_bp_1"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_2; reset_cycle_bp; shx_wp_sec_select"
+alias    "shx_wp_cycle_bp_2"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; reset_cycle_bp; shx_wp_best_select"
 
 // Cycle: Waffenwechsel zwischen bester Waffe und Messer
 alias    "shx_wp_cycle_bk"      "shx_wp_cycle_bk_1"
-alias    "shx_wp_cycle_bk_1"    "alias shx_wp_cycle_bk shx_wp_cycle_bk_2; reset_cycle_bk; shx_wp_bestgun"
-alias    "shx_wp_cycle_bk_2"    "alias shx_wp_cycle_bk shx_wp_cycle_bk_1; reset_cycle_bk; use weapon_knife"
+alias    "shx_wp_cycle_bk_1"    "alias shx_wp_cycle_bk shx_wp_cycle_bk_2; reset_cycle_bk; alias move_aim move_stop; shx_wp_best_select"
+alias    "shx_wp_cycle_bk_2"    "alias shx_wp_cycle_bk shx_wp_cycle_bk_1; reset_cycle_bk; alias move_aim null; shx_wp_knife_select"
 
 // Cycle: Waffenwechsel zwischen Sekundaerwaffe und Messer
 alias    "shx_wp_cycle_pk"      "shx_wp_cycle_pk_1"
-alias    "shx_wp_cycle_pk_1"    "alias shx_wp_cycle_pk shx_wp_cycle_pk_2; reset_cycle_pk; use weapon_knife; shx_wp_secgun"
-alias    "shx_wp_cycle_pk_2"    "alias shx_wp_cycle_pk shx_wp_cycle_pk_1; reset_cycle_pk; use weapon_knife"
+alias    "shx_wp_cycle_pk_1"    "alias shx_wp_cycle_pk shx_wp_cycle_pk_2; reset_cycle_pk; alias move_aim move_stop; shx_wp_sec_select"
+alias    "shx_wp_cycle_pk_2"    "alias shx_wp_cycle_pk shx_wp_cycle_pk_1; reset_cycle_pk; alias move_aim null; shx_wp_knife_select"
 
 // Cycle: Waffenwechsel zwischen bester Waffe, Sekundaerwaffe und Messer
 alias    "shx_wp_cycle_bpk"      "shx_wp_cycle_bpk_1"
-alias    "shx_wp_cycle_bpk_1"    "alias shx_wp_cycle_bpk shx_wp_cycle_bpk_2; reset_cycle_bpk; shx_wp_bestgun"
-alias    "shx_wp_cycle_bpk_2"    "alias shx_wp_cycle_bpk shx_wp_cycle_bpk_3; reset_cycle_bpk; use weapon_knife; shx_wp_secgun"
-alias    "shx_wp_cycle_bpk_3"    "alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; reset_cycle_bpk; use weapon_knife"
+alias    "shx_wp_cycle_bpk_1"    "alias shx_wp_cycle_bpk shx_wp_cycle_bpk_2; reset_cycle_bpk; alias move_aim null; shx_wp_best_select"
+alias    "shx_wp_cycle_bpk_2"    "alias shx_wp_cycle_bpk shx_wp_cycle_bpk_3; reset_cycle_bpk; alias move_aim null; shx_wp_sec_select"
+alias    "shx_wp_cycle_bpk_3"    "alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; reset_cycle_bpk; alias move_aim null; shx_wp_knife_select"
 
 // Cycle: Waffenwechsel zwischen HE-Granate, Blend-Granate und Rauch-Granate
 alias    "shx_wp_cycle_hfs"      "shx_wp_cycle_hfs_1"
-alias    "shx_wp_cycle_hfs_1"    "alias shx_wp_cycle_hfs shx_wp_cycle_hfs_2; reset_cycle_hfs; use weapon_smokegrenade; use weapon_flashbang; use weapon_hegrenade;"
-alias    "shx_wp_cycle_hfs_2"    "alias shx_wp_cycle_hfs shx_wp_cycle_hfs_3; reset_cycle_hfs; use weapon_smokegrenade; use weapon_flashbang"
-alias    "shx_wp_cycle_hfs_3"    "alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; reset_cycle_hfs; use weapon_smokegrenade"
+alias    "shx_wp_cycle_hfs_1"    "alias shx_wp_cycle_hfs shx_wp_cycle_hfs_2; reset_cycle_hfs; alias move_aim null; use weapon_smokegrenade; use weapon_flashbang; use weapon_hegrenade;"
+alias    "shx_wp_cycle_hfs_2"    "alias shx_wp_cycle_hfs shx_wp_cycle_hfs_3; reset_cycle_hfs; alias move_aim null; use weapon_smokegrenade; use weapon_flashbang"
+alias    "shx_wp_cycle_hfs_3"    "alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; reset_cycle_hfs; alias move_aim null; use weapon_smokegrenade"
 
 // Cycle: Waffenwechsel zwischen Rauch-Granate, Decoy-Granate und Molotow
 alias    "shx_wp_cycle_dms"      "shx_wp_cycle_dms_1"
-alias    "shx_wp_cycle_dms_1"    "alias shx_wp_cycle_dms shx_wp_cycle_dms_2; reset_cycle_dms; use weapon_smokegrenade; use weapon_incgrenade; use weapon_molotov; use weapon_decoy"
-alias    "shx_wp_cycle_dms_2"    "alias shx_wp_cycle_dms shx_wp_cycle_dms_3; reset_cycle_dms; use weapon_smokegrenade; use weapon_incgrenade; use weapon_molotov"
-alias    "shx_wp_cycle_dms_3"    "alias shx_wp_cycle_dms shx_wp_cycle_dms_1; reset_cycle_dms; use weapon_smokegrenade"
+alias    "shx_wp_cycle_dms_1"    "alias shx_wp_cycle_dms shx_wp_cycle_dms_2; reset_cycle_dms; alias move_aim null; use weapon_smokegrenade; use weapon_incgrenade; use weapon_molotov; use weapon_decoy"
+alias    "shx_wp_cycle_dms_2"    "alias shx_wp_cycle_dms shx_wp_cycle_dms_3; reset_cycle_dms; alias move_aim null; use weapon_smokegrenade; use weapon_incgrenade; use weapon_molotov"
+alias    "shx_wp_cycle_dms_3"    "alias shx_wp_cycle_dms shx_wp_cycle_dms_1; reset_cycle_dms; alias move_aim null; use weapon_smokegrenade"
 
 // Alias: Setzt jeweils die anderen Waffenwechsel-Cycle an den Anfangspunkt
 alias    "reset_cycle_bp"     "alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
@@ -372,7 +392,7 @@ alias    "reset_cycle_hfs"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias sh
 alias    "reset_cycle_dms"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1"
 
 // Alias: Setzt alle Waffenwechsel-Cycle an den Anfangspunkt
-alias    "reset_cycle_wp"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
+alias    "reset_cycle_all"    "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
 
 // SONSTIGES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
