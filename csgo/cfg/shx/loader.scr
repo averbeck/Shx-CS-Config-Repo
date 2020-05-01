@@ -5,10 +5,10 @@ echo    "  If everything seems under control, you're just not going fast enough.
 echo    " "
 echo    "                         + initializing ... +"
 echo    "                       ++++++++++++++++++++++++"
-echo    "                     +                          +" 
-echo    "                    +  ~~  Shx Config v2.37  ~~  +"
 echo    "                     +                          +"
-echo    "                       ++++++++++++++++++++++++" 
+echo    "                    +  ~~  Shx Config v2.40  ~~  +"
+echo    "                     +                          +"
+//echo  "                       ++++++++++++++++++++++++"
 //echo  "                         +     done ...     +"
 //
 // °°°°°°°°°°°°°°°
@@ -30,6 +30,7 @@ shx_clanid
 exec "shx/settings_custom.cfg"
 // °°°°°°°°°°°°°°°°°°°°°°°°
 //
+echo "                       ++++++++++++++++++++++++"
 echo "                         +     done ...     +"
 echo " "
 echo " "

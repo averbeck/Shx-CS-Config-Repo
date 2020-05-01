@@ -1,5 +1,5 @@
 
-alias    "shx_version"    "echo ] Shx CS:GO Config - Build 2.37"
+alias    "shx_version"    "echo ] Shx CS:GO Config - Build 2.40"
 alias    "shx_reload"     "exec shx/loader.scr"
 
 // DEMO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
