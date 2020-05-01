@@ -200,7 +200,6 @@ alias    "-shx_alt_layout"    "default_w; default_a; default_s; default_d; defau
 // ANGRIFF ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Schiessen
-
 alias    "+shx_attack"    "move_aim; +attack; spec_prev"
 alias    "-shx_attack"    "-attack; move_ais"
 
@@ -256,9 +255,13 @@ alias    "on_toggle_sneak"     "alias shx_toggle_sneak off_toggle_sneak; +speed"
 alias    "off_toggle_sneak"    "alias shx_toggle_sneak on_toggle_sneak; -speed"
 
 // Toggle: Schiessen unterbricht Laufen
+alias    "move_stop_action"       "-move_f; -move_b"
+alias    "move_aim"               "move_stop"
+alias    "move_stop"              "null"
+
 alias    "shx_toggle_move_aim"    "alias shx_toggle_move_aim on_toggle_aim"
-alias    "on_toggle_aim"          "alias shx_toggle_move_aim off_toggle_aim; alias move_aim move_stop"
-alias    "off_toggle_aim"         "alias shx_toggle_move_aim on_toggle_aim; alias move_aim null"
+alias    "on_toggle_aim"          "alias shx_toggle_move_aim off_toggle_aim; alias move_stop move_stop_action"
+alias    "off_toggle_aim"         "alias shx_toggle_move_aim on_toggle_aim; alias move_stop null"
 
 // Toggle: Schiessen unterbricht Schleichen
 alias    "shx_toggle_move_ais"    "-speed; alias shx_toggle_sneak on_toggle_sneak"
@@ -330,7 +333,7 @@ alias    "shx_wp_sec_select"    "slot2; alias move_aim move_stop"
 
 // Alias: Waffenwechsel zum Messer
 alias    "shx_wp_knife"           "reset_cycle_all; shx_clear_vision; shx_wp_knife_select"
-alias    "shx_wp_knife_select"    "slot3; alias move_aim null;
+alias    "shx_wp_knife_select"    "use weapon_knife; alias move_aim null;
 
 // Alias: Waffenwechsel zur HE-Granate
 alias    "shx_wp_hegren"    "reset_cycle_all; alias move_aim null; use weapon_hegrenade"
