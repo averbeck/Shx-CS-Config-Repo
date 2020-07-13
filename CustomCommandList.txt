@@ -34,7 +34,7 @@ taser
 # Pistols
 glock-p2000
 tec9-57
-deagle
+deagle-r8
 p250
 elite
 # Rifles
@@ -49,7 +49,7 @@ nova
 xm1014
 saw-mag7
 # SMGs
-mp7
+mp7-mp5
 mp9-mac10
 p90
 ump45
