@@ -1,8 +1,6 @@
 shx_version
 shx_reload
 
-shx_train
-
 demo_ct1
 demo_t1
 demo_ct2
@@ -15,9 +13,11 @@ shx_clear_vision
 
 shx_toggle_xray
 
+### GAME MODE SELECTOR ###
+shx_train
+
 ### LAN ###
-shx_lan
-shx_lan_start
+shx_start_lan
 
 ### BUYMENU ###
 # Grenades
@@ -78,12 +78,6 @@ shx_default_viewmodel
 
 ### VOICE ###
 shx_cycle_voice
-
-### RADIO ###
-shx_radio_bomb_a
-shx_radio_bomb_b
-shx_radio_bomb_down
-shx_alt_layout
 
 ### ON SCREEN DISPLAY ###
 shx_toggle_osd

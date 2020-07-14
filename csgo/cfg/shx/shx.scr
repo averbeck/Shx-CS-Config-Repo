@@ -16,12 +16,14 @@ alias    "demo_stop"            "stop; say_team [ Recording stopped! ]"
 alias    "+shx_scores"          "net_graph 1; +showscores"
 alias    "-shx_scores"          "-showscores; net_graph 0"
 
+
+// GAME MODE SELECTOR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+alias    "shx_gamesettings"     "exec shx/game_server_settings/menu_open.cfg"
+
 // LAN SERVER ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-alias    "shx_lan"              "exec shx/settings_lan.cfg"
-alias    "shx_lan_start"        "shx_lan; map de_dust2"
-
-alias    "shx_train"            "exec shx/train/menu_open.cfg"
+alias    "shx_start_lan"        "exec shx/game_server_settings/matchmaking.cfg; map de_dust2"
 
 // SLOTS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -107,6 +109,9 @@ alias    "shx_clear_vision"     "r_cleardecals"
 // Toggle: X-Ray
 alias    "shx_toggle_xray"      "incrementvar spec_show_xray 0 1 1"
 
+alias    "+shx_teaminfo"        "+cl_show_team_equipment; cl_showloadout 1; shx_clear_vision"
+alias    "-shx_teaminfo"        "-cl_show_team_equipment; cl_showloadout 0"
+
 // CLAN ID ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Alias: Clan ID Alias Platzhalter
@@ -167,23 +172,6 @@ alias    "shx_default_viewmodel"        "cl_viewmodel_shift_left_amt 1.5; cl_vie
 alias    "shx_toggle_viewmodel"         "default_toggle_viewmodel"
 alias    "default_toggle_viewmodel"     "shx_default_viewmodel; echo Dam____Viewmodel_=_default; alias shx_toggle_viewmodel custom_toggle_viewmodel"
 alias    "custom_toggle_viewmodel"      "shx_custom_viewmodel; echo Dam____Viewmodel_=_small; alias shx_toggle_viewmodel default_toggle_viewmodel"
-
-// RADIO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// Alias: Radio-Ansagen
-alias    "shx_radio_bomb_a"       "say_team ->[A]<- Bomb on A; needbackup"
-alias    "shx_radio_bomb_b"       "say_team ->[B]<- Bomb on B; needbackup"
-alias    "shx_radio_bomb_down"    "say_team -> Bomb down <-; needbackup"
-
-// Alias: Radio-Toggle
-alias    "shx_default_w"          "bind w +move_f"
-alias    "shx_default_a"          "bind a +move_l"
-alias    "shx_default_s"          "bind s +move_b"
-alias    "shx_default_d"          "bind d +move_r"
-alias    "shx_default_space"      "bind SPACE +move_jump"
-
-alias    "+shx_alt_layout"        "bind w enemyspot; bind a shx_radio_bomb_a; bind s shx_radio_bomb_b; bind SPACE shx_radio_bomb_down; shx_clear_vision"
-alias    "-shx_alt_layout"        "shx_default_w; shx_default_a; shx_default_s; shx_default_d; shx_default_space"
 
 // ANGRIFF ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -247,6 +235,8 @@ alias    "on_toggle_aim"            "alias shx_toggle_move_aim off_toggle_aim; a
 alias    "off_toggle_aim"           "alias shx_toggle_move_aim on_toggle_aim; alias move_stop null"
 
 // Toggle: Schiessen unterbricht Schleichen
+alias    "move_ais"                 "null"
+alias    "shx_toggle_ais"           "on_toggle_ais"
 alias    "shx_toggle_move_ais"      "-speed; alias shx_toggle_sneak on_toggle_sneak"
 alias    "on_toggle_ais"            "alias shx_toggle_ais off_toggle_ais; alias move_ais shx_toggle_move_ais"
 alias    "off_toggle_ais"           "alias shx_toggle_ais on_toggle_ais; alias move_ais null"
