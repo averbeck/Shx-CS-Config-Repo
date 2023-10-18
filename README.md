@@ -2,9 +2,9 @@
 
 This is my configuration for the game 'Counter-Strike'.
 
-I will constantly update these files for the current version of CS. Old releases (including older configs for previous CS versions) can be found [here](https://github.com/ghostcode1337/Shx-CS-Config-Repo/releases) 
+I will constantly update these files for the current version of CS. Old releases (including older configs for previous CS versions) can be found [here](https://github.com/averbeck/Shx-CS-Config-Repo/releases) 
 
-To use this configuration just put the *csgo* folder into `...\Steam\steamapps\common\Counter-Strike Global Offensive\` and replace the files that may be present.
+To use this configuration just put the *config* folder into `...\Steam\steamapps\common\Counter-Strike Global Offensive\game\core\` and replace the files that may be present.
 
 ### Launch Options
 Can be found in the *StartParameters.txt* file
