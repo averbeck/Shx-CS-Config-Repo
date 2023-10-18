@@ -59,9 +59,6 @@ alias    "75_cycle_voice"       "voice_scale 0.75; echo Dam____Voice_=_75%; alia
 alias    "100_cycle_voice"      "voice_scale 1; echo Dam____Voice_=_100%; alias shx_cycle_voice 0_cycle_voice"
 alias    "0_cycle_voice"        "voice_enable 0; voice_scale 0; echo Dam____Voice_=_off; alias shx_cycle_voice 5_cycle_voice"
 
-// Alias: Textures/Decals removal (remove blood) # Now cheat protected
-alias    "shx_clear_vision"     "cl_decal_clear_world; cl_decal_clear_all_entities" 
-
 // Toggle: X-Ray
 alias    "shx_toggle_xray"      "incrementvar spec_show_xray 0 1 1"
 
@@ -70,8 +67,8 @@ alias    "+shx_teaminfo"        "+cl_show_team_equipment; cl_showloadout 1"
 alias    "-shx_teaminfo"        "-cl_show_team_equipment; cl_showloadout 0"
 
 // Alias: Clan ID palceholder
-alias    "shx_clanid"               "null"
-alias    "no_clanid"                "cl_clanid 0"
+alias    "shx_clanid"           "null"
+alias    "no_clanid"            "cl_clanid 0"
 
 // Toggle: Clan ID
 alias    "shx_toggle_clanid"        "default_toggle_clanid"
@@ -79,26 +76,26 @@ alias    "default_toggle_clanid"    "no_clanid; echo Dam____Clan-ID_=_off; alias
 alias    "custom_toggle_clanid"     "shx_clanid; echo Dam____Clan-ID_=_on; alias shx_toggle_clanid default_toggle_clanid"
 
 // Toggle: Radar Zoom
-alias    "shx_radar_zoom_last"          "40_radar_zoom"
-alias    "shx_radar_zoom_in"            "35_radar_zoom"
-alias    "shx_radar_zoom_out"           "45_radar_zoom"
+alias    "shx_radar_zoom_last"      "40_radar_zoom"
+alias    "shx_radar_zoom_in"        "35_radar_zoom"
+alias    "shx_radar_zoom_out"       "45_radar_zoom"
 
-alias    "25_radar_zoom"                "cl_radar_scale 0.25; alias shx_radar_zoom_out null; alias shx_radar_zoom_in 30_radar_zoom; alias shx_radar_zoom_last 25_radar_zoom"
-alias    "30_radar_zoom"                "cl_radar_scale 0.30; alias shx_radar_zoom_out 25_radar_zoom; alias shx_radar_zoom_in 35_radar_zoom; alias shx_radar_zoom_last 30_radar_zoom"
-alias    "35_radar_zoom"                "cl_radar_scale 0.35; alias shx_radar_zoom_out 30_radar_zoom; alias shx_radar_zoom_in 40_radar_zoom; alias shx_radar_zoom_last 35_radar_zoom"
-alias    "40_radar_zoom"                "cl_radar_scale 0.40; alias shx_radar_zoom_out 35_radar_zoom; alias shx_radar_zoom_in 45_radar_zoom; alias shx_radar_zoom_last 40_radar_zoom"
-alias    "45_radar_zoom"                "cl_radar_scale 0.45; alias shx_radar_zoom_out 40_radar_zoom; alias shx_radar_zoom_in 50_radar_zoom; alias shx_radar_zoom_last 45_radar_zoom"
-alias    "50_radar_zoom"                "cl_radar_scale 0.50; alias shx_radar_zoom_out 45_radar_zoom; alias shx_radar_zoom_in 55_radar_zoom; alias shx_radar_zoom_last 50_radar_zoom"
-alias    "55_radar_zoom"                "cl_radar_scale 0.55; alias shx_radar_zoom_out 50_radar_zoom; alias shx_radar_zoom_in 60_radar_zoom; alias shx_radar_zoom_last 55_radar_zoom"
-alias    "60_radar_zoom"                "cl_radar_scale 0.60; alias shx_radar_zoom_out 55_radar_zoom; alias shx_radar_zoom_in 65_radar_zoom; alias shx_radar_zoom_last 60_radar_zoom"
-alias    "65_radar_zoom"                "cl_radar_scale 0.65; alias shx_radar_zoom_out 60_radar_zoom; alias shx_radar_zoom_in 70_radar_zoom; alias shx_radar_zoom_last 65_radar_zoom"
-alias    "70_radar_zoom"                "cl_radar_scale 0.70; alias shx_radar_zoom_out 65_radar_zoom; alias shx_radar_zoom_in 75_radar_zoom; alias shx_radar_zoom_last 70_radar_zoom"
-alias    "75_radar_zoom"                "cl_radar_scale 0.75; alias shx_radar_zoom_out 70_radar_zoom; alias shx_radar_zoom_in 80_radar_zoom; alias shx_radar_zoom_last 75_radar_zoom"
-alias    "80_radar_zoom"                "cl_radar_scale 0.80; alias shx_radar_zoom_out 75_radar_zoom; alias shx_radar_zoom_in 85_radar_zoom; alias shx_radar_zoom_last 80_radar_zoom"
-alias    "85_radar_zoom"                "cl_radar_scale 0.85; alias shx_radar_zoom_out 80_radar_zoom; alias shx_radar_zoom_in 90_radar_zoom; alias shx_radar_zoom_last 85_radar_zoom"
-alias    "90_radar_zoom"                "cl_radar_scale 0.90; alias shx_radar_zoom_out 85_radar_zoom; alias shx_radar_zoom_in 95_radar_zoom; alias shx_radar_zoom_last 90_radar_zoom"
-alias    "95_radar_zoom"                "cl_radar_scale 0.95; alias shx_radar_zoom_out 90_radar_zoom; alias shx_radar_zoom_in 100_radar_zoom; alias shx_radar_zoom_last 95_radar_zoom"
-alias    "100_radar_zoom"               "cl_radar_scale 1.00; alias shx_radar_zoom_out 95_radar_zoom; alias shx_radar_zoom_in null; alias shx_radar_zoom_last 100_radar_zoom"
+alias    "25_radar_zoom"            "cl_radar_scale 0.25; alias shx_radar_zoom_out null; alias shx_radar_zoom_in 30_radar_zoom; alias shx_radar_zoom_last 25_radar_zoom"
+alias    "30_radar_zoom"            "cl_radar_scale 0.30; alias shx_radar_zoom_out 25_radar_zoom; alias shx_radar_zoom_in 35_radar_zoom; alias shx_radar_zoom_last 30_radar_zoom"
+alias    "35_radar_zoom"            "cl_radar_scale 0.35; alias shx_radar_zoom_out 30_radar_zoom; alias shx_radar_zoom_in 40_radar_zoom; alias shx_radar_zoom_last 35_radar_zoom"
+alias    "40_radar_zoom"            "cl_radar_scale 0.40; alias shx_radar_zoom_out 35_radar_zoom; alias shx_radar_zoom_in 45_radar_zoom; alias shx_radar_zoom_last 40_radar_zoom"
+alias    "45_radar_zoom"            "cl_radar_scale 0.45; alias shx_radar_zoom_out 40_radar_zoom; alias shx_radar_zoom_in 50_radar_zoom; alias shx_radar_zoom_last 45_radar_zoom"
+alias    "50_radar_zoom"            "cl_radar_scale 0.50; alias shx_radar_zoom_out 45_radar_zoom; alias shx_radar_zoom_in 55_radar_zoom; alias shx_radar_zoom_last 50_radar_zoom"
+alias    "55_radar_zoom"            "cl_radar_scale 0.55; alias shx_radar_zoom_out 50_radar_zoom; alias shx_radar_zoom_in 60_radar_zoom; alias shx_radar_zoom_last 55_radar_zoom"
+alias    "60_radar_zoom"            "cl_radar_scale 0.60; alias shx_radar_zoom_out 55_radar_zoom; alias shx_radar_zoom_in 65_radar_zoom; alias shx_radar_zoom_last 60_radar_zoom"
+alias    "65_radar_zoom"            "cl_radar_scale 0.65; alias shx_radar_zoom_out 60_radar_zoom; alias shx_radar_zoom_in 70_radar_zoom; alias shx_radar_zoom_last 65_radar_zoom"
+alias    "70_radar_zoom"            "cl_radar_scale 0.70; alias shx_radar_zoom_out 65_radar_zoom; alias shx_radar_zoom_in 75_radar_zoom; alias shx_radar_zoom_last 70_radar_zoom"
+alias    "75_radar_zoom"            "cl_radar_scale 0.75; alias shx_radar_zoom_out 70_radar_zoom; alias shx_radar_zoom_in 80_radar_zoom; alias shx_radar_zoom_last 75_radar_zoom"
+alias    "80_radar_zoom"            "cl_radar_scale 0.80; alias shx_radar_zoom_out 75_radar_zoom; alias shx_radar_zoom_in 85_radar_zoom; alias shx_radar_zoom_last 80_radar_zoom"
+alias    "85_radar_zoom"            "cl_radar_scale 0.85; alias shx_radar_zoom_out 80_radar_zoom; alias shx_radar_zoom_in 90_radar_zoom; alias shx_radar_zoom_last 85_radar_zoom"
+alias    "90_radar_zoom"            "cl_radar_scale 0.90; alias shx_radar_zoom_out 85_radar_zoom; alias shx_radar_zoom_in 95_radar_zoom; alias shx_radar_zoom_last 90_radar_zoom"
+alias    "95_radar_zoom"            "cl_radar_scale 0.95; alias shx_radar_zoom_out 90_radar_zoom; alias shx_radar_zoom_in 100_radar_zoom; alias shx_radar_zoom_last 95_radar_zoom"
+alias    "100_radar_zoom"           "cl_radar_scale 1.00; alias shx_radar_zoom_out 95_radar_zoom; alias shx_radar_zoom_in null; alias shx_radar_zoom_last 100_radar_zoom"
 
 // Alias: View Model
 alias    "shx_custom_viewmodel"         "viewmodel_fov 54; viewmodel_offset_x 1; viewmodel_offset_y -2; viewmodel_offset_z -2"
@@ -130,89 +127,66 @@ alias    "on_toggle_ais"            "alias shx_toggle_ais off_toggle_ais; alias 
 alias    "off_toggle_ais"           "alias shx_toggle_ais on_toggle_ais; alias move_ais null"
 
 // Alias: Defuser Auto Buy (Default = off)
-alias    "shx_wp_defuser"           "null"
-alias    "shx_ar_defuser"           "null"
+alias    "shx_wp_defuser"       "null"
+alias    "shx_ar_defuser"       "null"
 
 // Alias: Previous Weapon
-alias    "shx_wp_prev"              "reset_cycle_all; invprev"
+alias    "shx_wp_prev"          "reset_cycle_all; invprev"
 
 // Alias: Next Weapon
-alias    "shx_wp_next"              "reset_cycle_all; invnext"
+alias    "shx_wp_next"          "reset_cycle_all; invnext"
 
 // Alias: Last Weapon
-alias    "shx_wp_last"              "reset_cycle_all; lastinv"
+alias    "shx_wp_last"          "reset_cycle_all; lastinv"
 
 // Alias: Switch To Best Weapon
 alias    "shx_wp_best"              "reset_cycle_all; shx_wp_best_select"
-alias    "shx_wp_best_select"       "shx_wp_knife_select; shx_wp_sec_select; shx_wp_pri_select"
+alias    "shx_wp_best_select"       "slot3; slot2; slot1"
 
 // Alias: Switch To Best Weapon After Buy
-alias    "shx_wp_equip"             "shx_wp_best"
+alias    "shx_wp_equip"         "shx_wp_best"
 
 // Alias: Switch To Primary Weapon
-alias    "shx_wp_pri"               "reset_cycle_all; shx_wp_pri_select"
-alias    "shx_wp_pri_select"        "slot1"
+alias    "shx_wp_pri"           "reset_cycle_all; slot1"
 
 // Alias: Switch To Secondary Weapon
-alias    "shx_wp_sec"               "reset_cycle_all; shx_wp_sec_select"
-alias    "shx_wp_sec_select"        "slot2"
+alias    "shx_wp_sec"           "reset_cycle_all; slot2"
 
 // Alias: Switch To Knife
-alias    "shx_wp_knife"             "reset_cycle_all; shx_wp_knife_select"
-alias    "shx_wp_knife_select"      "slot3"
-
-// Alias: Switch To HE Grenade
-alias    "shx_wp_hegren"            "reset_cycle_all; alias null; slot6"
-
-// Alias: Switch To Flash Grenade
-alias    "shx_wp_flgren"            "reset_cycle_all; alias null; slot7"
-
-// Alias: Switch To Smoke Grenade
-alias    "shx_wp_smgren"            "reset_cycle_all; alias null; slot8"
-
-// Alias: Switch To Decoy Grenade
-alias    "shx_wp_degren"            "reset_cycle_all; alias null; slot9"
-
-// Alias: Switch To Incendiary Grenade
-alias    "shx_wp_ingren"            "reset_cycle_all; alias null; slot10"
+alias    "shx_wp_knife"         "reset_cycle_all; slot3"
 
 // Alias: Switch To C4
-alias    "shx_wp_c4"                "reset_cycle_all; alias null; slot5"
+alias    "shx_wp_c4"            "reset_cycle_all; slot5"
 
-// Cycle: Primary Weapon To Secondary Weapon
-alias    "shx_wp_cycle_bp"          "shx_wp_cycle_bp_1"
-alias    "shx_wp_cycle_bp_1"        "alias shx_wp_cycle_bp shx_wp_cycle_bp_2; reset_cycle_bp; shx_wp_sec_select"
-alias    "shx_wp_cycle_bp_2"        "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; reset_cycle_bp; shx_wp_best_select"
+// Alias: Switch To HE Grenade
+alias    "shx_wp_hegren"        "reset_cycle_all; slot6"
 
-// Cycle: Primary Weapon To Knife
-alias    "shx_wp_cycle_bk"          "shx_wp_cycle_bk_1"
-alias    "shx_wp_cycle_bk_1"        "alias shx_wp_cycle_bk shx_wp_cycle_bk_2; reset_cycle_bk; alias move_stop; shx_wp_best_select"
-alias    "shx_wp_cycle_bk_2"        "alias shx_wp_cycle_bk shx_wp_cycle_bk_1; reset_cycle_bk; alias null; shx_wp_knife_select"
+// Alias: Switch To Flash Grenade
+alias    "shx_wp_flgren"        "reset_cycle_all; slot7"
 
-// Cycle: Secondary Weapon To Knife
-alias    "shx_wp_cycle_pk"          "shx_wp_cycle_pk_1"
-alias    "shx_wp_cycle_pk_1"        "alias shx_wp_cycle_pk shx_wp_cycle_pk_2; reset_cycle_pk; alias move_stop; shx_wp_sec_select"
-alias    "shx_wp_cycle_pk_2"        "alias shx_wp_cycle_pk shx_wp_cycle_pk_1; reset_cycle_pk; alias null; shx_wp_knife_select"
+// Alias: Switch To Smoke Grenade
+alias    "shx_wp_smgren"        "reset_cycle_all; slot8"
 
-// Cycle: HE Grenade, Flash Grenade, Smoke Grenade
-alias    "shx_wp_cycle_hfs"         "shx_wp_cycle_hfs_1"
-alias    "shx_wp_cycle_hfs_1"       "alias shx_wp_cycle_hfs shx_wp_cycle_hfs_2; reset_cycle_hfs; alias null; slot8; slot7; slot6;"
-alias    "shx_wp_cycle_hfs_2"       "alias shx_wp_cycle_hfs shx_wp_cycle_hfs_3; reset_cycle_hfs; alias null; slot8; slot7"
-alias    "shx_wp_cycle_hfs_3"       "alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; reset_cycle_hfs; alias null; slot8"
+// Alias: Switch To Decoy Grenade
+alias    "shx_wp_degren"        "reset_cycle_all; slot9"
+
+// Alias: Switch To Incendiary Grenade
+alias    "shx_wp_ingren"        "reset_cycle_all; slot10"
+
+// Alias: Switch To Healthshot
+alias    "shx_wp_zeus"          "reset_cycle_all; slot11"
+
+// Alias: Switch To Healthshot
+alias    "shx_wp_healthshot"        "reset_cycle_all; slot12"
 
 // Cycle: Smoke Grenade, Decoy Grenade, Incendiary Grenade
 alias    "shx_wp_cycle_dms"         "shx_wp_cycle_dms_1"
-alias    "shx_wp_cycle_dms_1"       "alias shx_wp_cycle_dms shx_wp_cycle_dms_2; reset_cycle_dms; alias null; slot8; slot10; slot9"
-alias    "shx_wp_cycle_dms_2"       "alias shx_wp_cycle_dms shx_wp_cycle_dms_3; reset_cycle_dms; alias null; slot8; slot10"
-alias    "shx_wp_cycle_dms_3"       "alias shx_wp_cycle_dms shx_wp_cycle_dms_1; reset_cycle_dms; alias null; slot8"
+alias    "shx_wp_cycle_dms_1"       "alias shx_wp_cycle_dms shx_wp_cycle_dms_2; reset_cycle_dms; slot8; slot10; slot9"
+alias    "shx_wp_cycle_dms_2"       "alias shx_wp_cycle_dms shx_wp_cycle_dms_3; reset_cycle_dms; slot8; slot10"
+alias    "shx_wp_cycle_dms_3"       "alias shx_wp_cycle_dms shx_wp_cycle_dms_1; reset_cycle_dms; slot8"
 
-// Alias: Reset For Each Cycles
-alias    "reset_cycle_bp"           "alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
-alias    "reset_cycle_bk"           "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
-alias    "reset_cycle_pk"           "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
-alias    "reset_cycle_bpk"          "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
-alias    "reset_cycle_hfs"          "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
-alias    "reset_cycle_dms"          "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1"
+// Alias: Reset For Each Cycle
+alias    "reset_cycle_dms"      "alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
 
 // Alias: Reset All Cycles
-alias    "reset_cycle_all"          "alias shx_wp_cycle_bp shx_wp_cycle_bp_1; alias shx_wp_cycle_bk shx_wp_cycle_bk_1; alias shx_wp_cycle_pk shx_wp_cycle_pk_1; alias shx_wp_cycle_bpk shx_wp_cycle_bpk_1; alias shx_wp_cycle_hfs shx_wp_cycle_hfs_1; alias shx_wp_cycle_dms shx_wp_cycle_dms_1"
+alias    "reset_cycle_all"      "reset_cycle_dms"

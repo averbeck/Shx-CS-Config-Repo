@@ -1,16 +1,6 @@
 shx_version
 shx_reload
 
-demo_ct1
-demo_t1
-demo_ct2
-demo_t2
-demo_stop
-
-shx_scores
-
-shx_clear_vision
-
 shx_toggle_xray
 
 ### GAME MODE SELECTOR ###
@@ -64,12 +54,8 @@ shx_clanid
 no_clanid
 
 ### RADAR ###
-shx_toggle_radar_dynamic
 shx_radar_zoom_in
 shx_radar_zoom_out
-shx_radar_default
-shx_radar_static
-shx_radar_dynamic
 
 ### VIEWMODEL ###
 shx_toggle_viewmodel
@@ -79,26 +65,19 @@ shx_default_viewmodel
 ### VOICE ###
 shx_cycle_voice
 
-### ON SCREEN DISPLAY ###
-shx_toggle_osd
-shx_toggle_display_damage
-
 ### WEAPON SELECT ###
 shx_wp_best
 shx_wp_pri
 shx_wp_sec
 shx_wp_knife
+shx_wp_c4
 shx_wp_hegren
 shx_wp_flgren
 shx_wp_smgren
 shx_wp_degren
 shx_wp_ingren
-shx_wp_c4
+shx_wp_zeus
+shx_wp_healthshot
 
 ### WEAPON CYCLES ###
-shx_wp_cycle_bp
-shx_wp_cycle_bk
-shx_wp_cycle_pk
-shx_wp_cycle_bpk
-shx_wp_cycle_hfs
 shx_wp_cycle_dms
